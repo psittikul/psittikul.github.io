@@ -35,4 +35,10 @@ ul {
 .content-section {
     float: left;
     width: 70%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.content-section p {
+    font-size: large;   
 }
