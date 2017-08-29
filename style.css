@@ -3,4 +3,13 @@
     width: 100%;
     font-family: 'Raleway', sans-serif;
     padding-left: 5%;
+    padding-top: 1%;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+}
+
+ul {
+    list-style: none;
 }
