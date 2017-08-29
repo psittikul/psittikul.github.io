@@ -41,4 +41,6 @@ ul {
 
 .content-section p {
     font-size: large;   
+    margin-bottom: 10%;
+    text-align: justify;
 }
