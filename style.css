@@ -1,5 +1,7 @@
 #header {
-
+    float: left;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
