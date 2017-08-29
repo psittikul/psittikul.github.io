@@ -23,3 +23,8 @@ ul {
 #sidebar {
     float: right;
 }
+
+#sidebar img {
+    width: 35%;
+    display: block;
+}
