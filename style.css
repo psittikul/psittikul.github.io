@@ -2,8 +2,11 @@
     float: left;
     width: 100%;
     font-family: 'Raleway', sans-serif;
-    padding-left: 5%;
     padding-top: 1%;
+}
+
+#header h1 {
+    font-size: 40px;
 }
 
 body {
@@ -12,4 +15,9 @@ body {
 
 ul {
     list-style: none;
+    font-size: x-large;
+}
+
+#sidebar {
+    float: right;
 }
