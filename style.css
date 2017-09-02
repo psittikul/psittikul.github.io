@@ -20,7 +20,8 @@ a {
     color: inherit;
 }
 }
-ul {
+
+#sidebar ul {
     list-style: none;
     font-size: x-large;
     padding-left: 35%;
