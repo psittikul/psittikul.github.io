@@ -42,6 +42,28 @@ a {
     width: 100px;
 }
 
+.overlay {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.25s;
+    z-index: 1;
+    background: -webkit-linear-gradient(to left, rgba(29, 38, 113, 0.5), rgba(195, 55, 100, 0.5));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, rgba(29, 38, 113, 0.5), rgba(195, 55, 100, 0.5));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
 #sidebar img {
     width: 50%;
     display: block;
@@ -66,7 +88,7 @@ a {
 }
 
 .content-section p {
-    font-size: large;   
+    font-size: large;
     margin-bottom: 10%;
     text-align: justify;
     margin-top: 5%;
