@@ -25,16 +25,17 @@ a {
 #sidebar ul {
     list-style: none;
     font-size: x-large;
-    padding-left: 35%;
+    padding-left: 30%;
 }
 
 #sidebar {
     float: right;
     margin-top: 5%;
+    width: 17%;
 }
 
 #sidebar img {
-    width: 35%;
+    width: 50%;
     display: block;
     margin: auto;
 }
@@ -44,12 +45,15 @@ a {
     width: 75%;
     margin-bottom: 5%;
     margin-top: 5%;
+    border-right: thin solid black;
+    padding-right: 7%;
 }
 
 .content-section p {
     font-size: large;   
     margin-bottom: 10%;
     text-align: justify;
+    margin-top: 5%;
 }
 
 #vertical-line {
