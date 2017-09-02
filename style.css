@@ -38,6 +38,14 @@ a {
     width: 50%;
     display: block;
     margin: auto;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+#sidebar img:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .content-section {
