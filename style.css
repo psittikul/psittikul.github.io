@@ -1,3 +1,5 @@
+/* GLOBAL STYLES */
+
 #header {
     float: left;
     width: 100%;
@@ -48,4 +50,8 @@ a {
     font-size: large;   
     margin-bottom: 10%;
     text-align: justify;
+}
+
+#vertical-line {
+    border-left: thin solid #000000;
 }
