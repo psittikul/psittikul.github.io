@@ -37,9 +37,12 @@ a {
 .circle {
     border-radius: 100%;
     display: flex;
-    flex: 0 0 150px;
-    height: 100px;
-    width: 100px;
+    flex: 0 0 125px;
+    height: 125px;
+    width: 125px;
+    overflow: hidden;
+    justify-content: center;
+    margin: auto;
 }
 
 .overlay {
@@ -65,8 +68,7 @@ a {
 }
 
 #sidebar img {
-    width: 50%;
-    display: block;
+    height: 100%;
     margin: auto;
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
