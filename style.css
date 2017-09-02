@@ -34,6 +34,14 @@ a {
     width: 17%;
 }
 
+.circle {
+    border-radius: 100%;
+    display: flex;
+    flex: 0 0 150px;
+    height: 100px;
+    width: 100px;
+}
+
 #sidebar img {
     width: 50%;
     display: block;
@@ -44,8 +52,8 @@ a {
 }
 
 #sidebar img:hover {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .content-section {
