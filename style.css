@@ -20,6 +20,11 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    transition: .5s;
+}
+
+a:hover {
+    color: lightgray;
 }
 
 #sidebar ul {
