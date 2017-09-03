@@ -23,6 +23,11 @@ a {
     transition: .35s;
 }
 
+#mainlink {
+    color: inherit;
+    text-decoration: none;
+}
+
 a:hover {
     color: lightgray;
 }
