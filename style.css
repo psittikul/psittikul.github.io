@@ -20,7 +20,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    transition: .5s;
+    transition: .35s;
 }
 
 a:hover {
