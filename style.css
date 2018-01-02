@@ -46,7 +46,7 @@ a:hover {
     width: 17%;
 }
 
-#sidebar a {
+#sidebar a:hover {
     font-size: larger;
 }
 
