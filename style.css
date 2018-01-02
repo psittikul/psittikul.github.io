@@ -46,8 +46,9 @@ a:hover {
     width: 17%;
 }
 
-#sidebar a:hover {
+#sidebar a:active {
     font-size: larger;
+    color: lightgrey;
 }
 
 .circle {
