@@ -15,14 +15,11 @@
         </div>
         <hr width="1200" align="left">
         <div class="content-section">
-            <div id="self" style="text-align: center">
-                <img src="DSC_0181-min-small.jpg" style="width: 25%; box-shadow: 3px 3px lightgrey;" />
-            </div>
-            <img src="Patricia%20Sittikul%20Resume%202018.jpg" onclick="openModal();" class="hover-shadow">
+            <img src="Patricia%20Sittikul%20Resume%202018.jpg" onclick="openModal();" class="hover-shadow" style="width: 75%; display: block; margin: auto;">
 
             <div id="myModal" class="modal">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
+                <div class="modal-content" id="modal-image">
                     <div class="mySlides">
                         <img src="Patricia%20Sittikul%20Resume%202018.jpg" style="width:100%">
                     </div>
@@ -30,7 +27,7 @@
             </div>
 
             <br><br><br><br>
-            <a id="readmore" href="Patricia%20Sittikul%20Resume%202018.pdf" style="float: right;">Download PDF</a>
+            <a id="readmore" href="Patricia%20Sittikul%20Resume%202018.pdf" style="float: right;" target="_blank">PDF</a>
         </div>
         <div id="sidebar">
             <div>
@@ -43,9 +40,9 @@
                 </a>
             </div>
             <ul>
-                <li><a href="#">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="#">RESUME</a></li>
                 <li><a href="work.html">WORK</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
@@ -57,11 +54,13 @@
         <script>
             function openModal() {
                 document.getElementById('myModal').style.display = "block";
+                document.getElementById('modal-image').style.display = "block";
             }
 
             // Close the Modal
             function closeModal() {
                 document.getElementById('myModal').style.display = "none";
+                document.getElementById('modal-image').style.display = "none";
             }
 
         </script>
