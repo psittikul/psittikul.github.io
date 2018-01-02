@@ -46,6 +46,10 @@ a:hover {
     width: 17%;
 }
 
+#sidebar a {
+    font-size: larger;
+}
+
 .circle {
     border-radius: 100%;
     display: flex;
