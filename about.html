@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Patricia Sittikul</title>
     </head>
@@ -47,8 +49,7 @@
 
             </div>
             <h3>Programming Languages Ranked According to Experience</h3>
-            <div class="slider-section">
-            </div>
+            <canvas id="myChart" width="400" height="400"></canvas>
             <h3>My Favorite Programming Languages</h3>
             <h2>PHP*</h2>
             <h3>JavaScript</h3>
@@ -59,6 +60,45 @@
             <hr width="1200" align="left">
             <span style="font-size: x-small; float:left;"><a href="https://www.vexels.com/vectors/preview/138662/sacred-geometry-lotus-flower"> Sacred geometry lotus flower </a> designed by Vexels</span>
         </div>
+        <script>
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
     </body>
 
 </html>
