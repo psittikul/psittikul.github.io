@@ -18,11 +18,19 @@
             <div id="self" style="text-align: center">
                 <img src="DSC_0181-min-small.jpg" style="width: 25%; box-shadow: 3px 3px lightgrey;" />
             </div>
-            <p>Hi there! My name is Patricia. I am a computer science student with a passion for doing good and helping others - and I firmly believe that love and compassion should drive the work I do. I feel most inspired and challenged by projects where I can apply my skills to help others, and try to approach all problems with this philosophy in mind. Most of my work experience is with small, non-profit organizations with limited budgets and resources, so I am experienced in conceiving creative, customized, and accommodating solutions. My main areas of interest are database design and administration, full-stack web development, and site reliability engineering.
-                <br><br><br><br>
-                <a id="readmore" href="about.html#more" style="float: right;">More about me</a>
-            </p>
-            <span style="font-size: x-small; float:left; margin-top: 10%;"><a href="https://www.vexels.com/vectors/preview/138662/sacred-geometry-lotus-flower"> Sacred geometry lotus flower </a> | designed by Vexels</span>
+            <img src="Patricia%20Sittikul%20Resume%202018.jpg" onclick="openModal();" class="hover-shadow">
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img src="Patricia%20Sittikul%20Resume%202018.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br>
+            <a id="readmore" href="Patricia%20Sittikul%20Resume%202018.pdf" style="float: right;">Download PDF</a>
         </div>
         <div id="sidebar">
             <div>
@@ -46,6 +54,16 @@
             <hr width="1200" align="left">
             <span style="font-size: x-small; float:left;"><a href="https://www.vexels.com/vectors/preview/138662/sacred-geometry-lotus-flower"> Sacred geometry lotus flower </a> designed by Vexels</span>
         </div>
-    </body>
+        <script>
+            function openModal() {
+                document.getElementById('myModal').style.display = "block";
+            }
 
+            // Close the Modal
+            function closeModal() {
+                document.getElementById('myModal').style.display = "none";
+            }
+
+        </script>
+    </body>
 </html>
