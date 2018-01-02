@@ -118,3 +118,8 @@ a:hover {
     margin-top: 5%;
     background-color: black;
 }
+
+#footer {
+    width: 100%;
+    float: left;
+}
