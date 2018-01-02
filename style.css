@@ -46,10 +46,6 @@ a:hover {
     width: 17%;
 }
 
-#sidebar a:active {
-    font-size: larger;
-    color: lightgrey;
-}
 
 .circle {
     border-radius: 100%;
