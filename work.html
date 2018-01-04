@@ -17,65 +17,64 @@
     <div class="content-section">
         <img src="Saab-Gear-Heart-Ad-Enlarged.jpeg" onclick="openModal(0);" class="hover-shadow" style="width: 45%; display: block; margin: auto;">
         <p class="caption">Full-page back cover advertisement featured in NINES, the Saab Club of North America magazine issue #344.</p>
+        <img src="Charles%20River%20Saab%20Flyer.png" onclick="openModal(1);" class="hover-shadow" style="width: 45%; display: block; margin: auto;">
+        <p class="caption">Redesigned Saab Original Parts general use flyer, seen here as customized for Charles River Saab.</p>
         <div id="myModal" class="modal">
-            <img src="Charles%20River%20Saab%20Flyer.png" onclick="openModal(1);" class="hover-shadow" style="width: 45%; display: block; margin: auto;">
-            <p class="caption">Redesigned Saab Original Parts general flyer for use with member organizations, seen here as designed for Charles River Saab.</p>
-            <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal(0)">&times;</span>
-                <div class="modal-content" id="modal-image">
-                    <div class="mySlides">
-                        <img src="Saab-Gear-Heart-Ad-Enlarged.jpeg" style="width:100%">
-                    </div>
+            <span class="close cursor" onclick="closeModal(0)">&times;</span>
+            <div class="modal-content" id="modal-image">
+                <div class="mySlides">
+                    <img src="Saab-Gear-Heart-Ad-Enlarged.jpeg" style="width:100%">
                 </div>
             </div>
-            <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal(1)">&times;</span>
-                <div class="modal-content" id="modal-image">
-                    <div class="mySlides">
-                        <img src="Charles%20River%20Saab%20Flyer.png" style="width:100%">
-                    </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal(1)">&times;</span>
+            <div class="modal-content" id="modal-image">
+                <div class="mySlides">
+                    <img src="Charles%20River%20Saab%20Flyer.png" style="width:100%">
                 </div>
             </div>
-
-            <br><br><br><br>
         </div>
-        <div id="sidebar">
-            <div>
-                <a class="img" href="index.html">
-                    <div class="circle">
-                        <div class="overlay">
-                        </div>
-                        <img src="sacred-geometry-lotus-flower-by-Vexels.png" />
+
+        <br><br><br><br>
+    </div>
+    <div id="sidebar">
+        <div>
+            <a class="img" href="index.html">
+                <div class="circle">
+                    <div class="overlay">
                     </div>
-                </a>
-            </div>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="#" style="font-size: larger; color: lightgrey">WORK</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
+                    <img src="sacred-geometry-lotus-flower-by-Vexels.png" />
+                </div>
+            </a>
         </div>
-        <div id="footer">
-            <hr width="1200" align="left">
-            <span style="font-size: x-small; float:left;"><a href="https://www.vexels.com/vectors/preview/138662/sacred-geometry-lotus-flower"> Sacred geometry lotus flower </a> designed by Vexels</span>
-        </div>
-        <script>
-            function openModal(numImage) {
-                document.getElementById('myModal').style.display = "block";
-                document.getElementById('modal-image').style.display = "block";
-                document.getElementsByClassName('mySlides')[numImage].style.display = "block";
-            }
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="#" style="font-size: larger; color: lightgrey">WORK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="footer">
+        <hr width="1200" align="left">
+        <span style="font-size: x-small; float:left;"><a href="https://www.vexels.com/vectors/preview/138662/sacred-geometry-lotus-flower"> Sacred geometry lotus flower </a> designed by Vexels</span>
+    </div>
+    <script>
+        function openModal(numImage) {
+            document.getElementById('myModal').style.display = "block";
+            document.getElementById('modal-image').style.display = "block";
+            document.getElementsByClassName('mySlides')[numImage].style.display = "block";
+        }
 
-            // Close the Modal
-            function closeModal(numImage) {
-                document.getElementById('myModal').style.display = "none";
-                document.getElementById('modal-image').style.display = "none";
-                document.getElementsByClassName('mySlides')[numImage].style.display = "none";
-            }
+        // Close the Modal
+        function closeModal(numImage) {
+            document.getElementById('myModal').style.display = "none";
+            document.getElementById('modal-image').style.display = "none";
+            document.getElementsByClassName('mySlides')[numImage].style.display = "none";
+        }
 
-        </script>
+    </script>
 </body>
 
 </html>
