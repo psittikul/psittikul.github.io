@@ -189,6 +189,6 @@ img.hover-shadow {
 }
 
 .caption {
-    font-size: smaller;
-    text-align: center;
+    font-size: smaller !important;
+    text-align: center !important;
 }
