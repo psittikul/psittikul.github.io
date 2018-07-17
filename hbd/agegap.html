@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+    <!--<![endif]-->
+    <title>HBD</title>
+
+    <head>
+        <meta name="viewport" content="width = 1050, user-scalable = no" />
+        <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
+        <script type="text/javascript" src="../extras/jquery.min.1.7.js"></script>
+        <link type="text/css" rel="stylesheet" href="hbd-styles.css">
+        <link rel="icon" href="../favicon-16x16.png" type="image/x-icon"/>
+        <script type="text/javascript" src="../extras/modernizr.2.5.3.min.js"></script>
+    </head>
+
+    <body>
+        <div style="float: left; width: 100%; clear: both; padding-top: 1%"><a href="hbd.html">Back</a></div>
+        <div id="me">
+            <img src="ref/Circle-PNG-File.png"/>
+            <p>(Me)<br>November 6, 1995</p>
+        </div>
+        <div id="gap">
+            <div id="gap-fill">
+                <h2 id="larr">&larr;</h2>
+                <h2 id = "duration">1 year, 8 months and 18 days</h2>
+                <h2 id="right-arrow">&rarr;</h2>
+            </div>
+        </div>
+        <div id="you">
+            <img src="ref/Circle-PNG-File.png"/>
+            <p>(You)<br>
+                July 24, 1997</p>
+        </div>
+        <div id="timeline"></div>
+        <div id = "events">
+            <div>
+                <h4 id="ninety-five">What Happened in 1995:</h4>
+                <ul>
+                    <li class="event">O.J. Simpson: innocent</li>
+                    <li class="event">Notorious B.I.G: alive</li>
+                    <li class = "event">Titanic: not yet released</li>
+                    <li class="event">Macarena: big hit</li>
+                    <li class="event">Slavery: just officially abolished</li>
+                    <li class="event">Harry Potter books: don't exist</li>
+                </ul>
+            </div>
+            <div>
+                <h4 id = "ninety-seven">What Happened in 1997:</h4>
+                <ul>
+                    <li class="nevent">O.J. Simpson: guilty</li>
+                    <li class="nevent">Notorious B.I.G: not alive</li>
+                    <li class="nevent">Titanic: released and winning a fuck ton of awards</li>
+                    <li class="nevent">Macarena: old news</li>
+                    <li class="nevent">Slavery: abolished 2 years ago</li>
+                    <li class="nevent">Harry Potter books: exist</li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            //            $(document).ready(function() {
+            //                $("#right-arrow").css("transition-duration", "3s");
+            //                console.log("ready!");
+            //
+            //                window.setTimeout(function() {
+            //                    $("#right-arrow").css("float", "right");
+            //                }, 1200);
+            //            });
+            $(document).ready(function() {
+                $("#me").fadeIn(800);
+                window.setTimeout(function() {
+                    $("#larr").fadeIn(900);
+                    $("#gap-fill").fadeIn(725);
+                    window.setTimeout(function() {
+                        $("#gap-fill").animate({
+                            width: "950px",
+                        }, 4500);
+                    }, 750);    
+                }, 800);
+
+                window.setTimeout(function() {
+                    $("#you img").animate({
+                        visibility: "toggle"
+                    },700);
+                    $("#you p").animate({
+                        visibility: "toggle"    
+                    }, 700);
+                }, 6000);
+                window.setTimeout(function() {
+                    $("#duration").fadeIn(1000);
+                    $("#duration").css("display", "inline-block");
+                    $("#gap-fill h2:last-child").fadeIn(1000);
+                }, 5500);
+
+                window.setTimeout(function() {
+                    $("#ninety-five").fadeIn(800);
+                    var delayTime = 1000;
+                    $(".event").each(function() {
+                        $(this).delay(delayTime).fadeIn(1000);
+                        delayTime += 700;
+                    });
+                }, 6800);
+
+                window.setTimeout(function() {
+                    $("#ninety-seven").fadeIn(800);
+                    var delayTime = 1000;
+                    $(".nevent").each(function() {
+                        $(this).delay(delayTime).fadeIn(1000);
+                        delayTime += 700;
+                    });
+                }, 12000);
+                //                window.setTimeout(function() {
+                //                    $("#ninety-seven").fadeIn(1000);
+                //                    $("#ninety-seven").css("display", "inline-block");
+                //                }, 7000);
+            });
+        </script>
+    </body>
+
+</html>
