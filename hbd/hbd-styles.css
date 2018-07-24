@@ -213,9 +213,7 @@ a:hover {
     display: none;
 }
 
-#duration {
-    display: none;
-}
+#duration {}
 
 
 #gap-fill {
