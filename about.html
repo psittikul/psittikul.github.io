@@ -1,109 +1,118 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Patricia Sittikul</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Patricia Sittikul</title>
+</head>
 
-    <body>
-        <div id="header">
-            <h1><a href="index.html" id="mainlink">PATRICIA SITTIKUL</a></h1>
-        </div>
-        <hr width="1200" align="left">
-        <div id="sidebar">
-            <div>
-                <a class="img" href="index.html">
-                    <div class="circle">
-                        <div class="overlay">
-                        </div>
-                        <img src="sacred-geometry-lotus-flower-by-Vexels.png" />
+<body>
+    <div id="header">
+        <h1><a href="index.html" id="mainlink">PATRICIA SITTIKUL</a></h1>
+    </div>
+    <hr width="1200" align="left">
+    <div id="sidebar">
+        <div>
+            <a class="img" href="index.html">
+                <div class="circle">
+                    <div class="overlay">
                     </div>
-                </a>
-            </div>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#" style="font-size: larger; color: lightgrey">ABOUT</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="work.html">WORK</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
+                    <img src="sacred-geometry-lotus-flower-by-Vexels.png" />
+                </div>
+            </a>
         </div>
-        <div class="content-section">
-            <div id="self" style="text-align: center">
-                <img src="DSC_0181-min-small.jpg" style="width: 25%; box-shadow: 3px 3px lightgrey;" />
-            </div>
-            <p>I am a computer science student with a passion for doing good and helping others - and I firmly believe that love and compassion should drive the work I do. I feel most inspired and challenged by projects where I can apply my skills to help others, and try to approach all problems with this philosophy in mind. Most of my work experience is with small, often non-profit organizations with limited budgets and/or resources, so I am adept in conceiving creative, customized, and accommodating solutions. My main areas of interest are database design and administration, full-stack web development, and user experience design.
-                <br><br><br>
-                <span id="more">Originally, I never thought I would go into computer science. My interest in it was piqued when I took an introductory programming course my freshman year, in which we learned basic Matlab and Arduino. The experience of writing code and testing it again and again, seeing the results each time until I was finally successful was what made me fall in love with programming.</span>
-                <br>
-                <br>
-                <br> Since I was old enough to even think of college, I'd been told by many a person that I should work towards a lucrative profession, even if the work wasn't something I agreed with or wanted to do. I was told I "shouldn't be afraid to sell my soul to a company I don't believe in" to make more money, and I always knew that was advice I wouldn't follow. When people would ask me what I want to do in life, I've always said I want to make the world a better place. This elicited cynicism and some laughter even in my starry-eyed childhood, but I still feel that to this day. I aspire to keep learning and working towards that dream, and I'm lucky enough to have had opportunities to do just that.
-            </p>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" style="font-size: larger; color: lightgrey">ABOUT</a></li>
+            <!--            <li><a href="resume.html">RESUME</a></li>-->
+            <li><a href="work.html">WORK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="content-section">
+        <div id="self" style="text-align: center">
+            <img src="DSC_0181-min-small.jpg" style="width: 25%; box-shadow: 3px 3px lightgrey;" />
+        </div>
+        <p>I am a computer science student with a passion for doing good and helping others - and I firmly believe that love and compassion should drive the work I do. I feel most inspired and challenged by projects where I can apply my skills to help others, and try to approach all problems with this philosophy in mind. Most of my work experience is with small, often non-profit organizations with limited budgets and/or resources, so I am adept in conceiving creative, customized, and accommodating solutions. My main areas of interest are database design and administration, full-stack web development, and user experience design.
+            <br><br><br>
+            <span id="more">Originally, I never thought I would go into computer science. My interest in it was piqued when I took an introductory programming course my freshman year, in which we learned basic Matlab and Arduino. The experience of writing code and testing it again and again, seeing the results each time until I was finally successful was what made me fall in love with programming.</span>
+            <br>
+            <br>
+            <br> Since I was old enough to even think of college, I'd been told by many a person that I should work towards a lucrative profession, even if the work wasn't something I agreed with or wanted to do. I was told I "shouldn't be afraid to sell my soul to a company I don't believe in" to make more money, and I always knew that was advice I wouldn't follow. When people would ask me what I want to do in life, I've always said I want to make the world a better place. This elicited cynicism and some laughter even in my starry-eyed childhood, but I still feel that to this day. I aspire to keep learning and working towards that dream, and I'm lucky enough to have had opportunities to do just that.
+        </p>
 
-<!--
+        <!--
             <h3 style="text-decoration: underline">Programming Languages Ranked According to Experience</h3>
             <canvas id="myChart" width="400" height="400"></canvas>
 -->
-            <br><br>
+        <br><br>
+        <canvas id="languagesByLines">
+        
+        </canvas>
+        <!--
             <h3 style="text-decoration: underline">My Favorite Programming Languages</h3>
             <h2 style="display: inline">PHP*</h2>  |  
             <h3 style="display: inline">JavaScript</h3>  |  
             <h4 style="display: inline">Python</h4>
             <p style="font-size: x-small">*Even though it bothers me that PHP stands for "Hypertext Preprocessor"</p>
-        </div>
-        <div id="footer">
-            <hr width="1200" align="left">
-            <span style="font-size: x-small; float:left;"><a href="https://www.vexels.com/vectors/preview/138662/sacred-geometry-lotus-flower"> Sacred geometry lotus flower </a> designed by Vexels</span>
-        </div>
-        <script>
-            var ctx = document.getElementById("myChart").getContext('2d');
-            var myChart = new Chart(ctx, {
-                type: 'horizontalBar',
-                data: {
-                    labels: ["HTML/CSS", "PHP", "JavaScript", "Visual Basic", "Python", "Java", "R"],
-                    datasets: [{
-                        data: [12, 19, 3, 5, 2, 3],
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ],
-                        borderColor: [
-                            'rgba(255,99,132,1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    legend: {
-                        display: false
-                    }
-                    xAxes: {
+-->
+    </div>
+    <div id="footer">
+        <hr width="1200" align="left">
+        <span style="font-size: x-small; float:left;"><a href="https://www.vexels.com/vectors/preview/138662/sacred-geometry-lotus-flower"> Sacred geometry lotus flower </a> designed by Vexels</span>
+    </div>
+    <script>
+        var ctx = document.getElementById('languagesByLines').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'horizontalBar',
+
+            // The data for our dataset
+            data: {
+                labels: ["C/C++", "Java", "JavaScript", "PHP", "Python", "R"],
+                datasets: [{
+                    data: [1000, 1344, 2862, 4662, 1200, 800],
+                    backgroundColor: [
+                        "#017CC7", "#E51F24", "#E9B925", "#878DB8", "#eeeeee", "#222222"
+                    ]
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                legend: {
                     display: false
+                },
+                responsive: true,
+                animation: {
+                    duration: 3000
+                },
+                title: {
+                    display: true,
+                    text: "Programming Languages by Amount of Code I've Written in Them (according to GitHub)"
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false,
+                            drawBorder: false
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            display: false,
+                            drawBorder: false
+                        }
+                    }]
                 }
             }
-                                    //                    scales: {
-                                    //                        yAxes: [{
-                                    //                            ticks: {
-                                    //                                beginAtZero:true
-                                    //                            }
-                                    //                        }]
-                                    //                    }
-                                    });
-        </script>
-    </body>
+        });
+
+    </script>
+</body>
 
 </html>
