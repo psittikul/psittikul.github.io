@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial|Raleway">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+    <title>Patricia Sittikul</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1><a href="index.html" id="mainlink">PATRICIA SITTIKUL</a></h1>
+    </div>
+    <hr width="1200" align="left">
+    <div class="content-section">
+        <!-- Thumbnails for different work pieces -->
+        <img src="Saab-Gear-Heart-Ad-Enlarged.jpeg" onclick="openModal(0);" class="hover-shadow" style="width: 45%; display: block; margin: auto;">
+        <p class="caption">Full-page back cover advertisement featured in NINES, the Saab Club of North America magazine issue #344.</p>
+
+        <img src="Charles%20River%20Saab%20Flyer.png" onclick="openModal(1);" class="hover-shadow" style="width: 45%; display: block; margin: auto;">
+        <p class="caption">Redesigned Saab Original Parts general use flyer, seen here as customized for Charles River Saab.</p>
+
+        <img src="Saab-Orio%20Trifold%20Booklet-1.jpg" onclick="openModal(2);" class="hover-shadow" style="width: 45%; display: block; margin: auto;">
+        <p class="caption">Page 1 of the Saab-Orio trifold booklet, distributed at conventions across North America.</p>
+
+        <img src="Saab-Orio%20Trifold%20Booklet-2.jpg" onclick="openModal(3);" class="hover-shadow" style="width: 45%; display: block; margin: auto;">
+        <p class="caption">Page 2 of the Saab-Orio trifold booklet, distributed at conventions across North America.</p>
+<!--
+<img src="images/Kanye%20Final.jpg" onclick="openModal(4);" class="hover-shadow" style="width: 45%; display: block; margin: auto;">
+<p class="caption">Digital print of Kanye West, made as a birthday present to a friend.</p>
+-->
+
+
+
+        <!-- Modals for the different work pieces that will open upon click -->
+        <div class="modal">
+            <span class="close cursor" onclick="closeModal(0)">&times;</span>
+            <div class="modal-content" id="modal-image">
+                <div class="mySlides">
+                    <img src="Saab-Gear-Heart-Ad-Enlarged.jpeg" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <span class="close cursor" onclick="closeModal(1)">&times;</span>
+            <div class="modal-content" id="modal-image">
+                <div class="mySlides">
+                    <img src="Charles%20River%20Saab%20Flyer.png" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <span class="close cursor" onclick="closeModal(2)">&times;</span>
+            <div class="modal-content" id="modal-image">
+                <div class="mySlides">
+                    <img src="Saab-Orio%20Trifold%20Booklet-1.jpg" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <span class="close cursor" onclick="closeModal(3)">&times;</span>
+            <div class="modal-content" id="modal-image">
+                <div class="mySlides">
+                    <img src="Saab-Orio%20Trifold%20Booklet-2.jpg" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <span class="close cursor" onclick="closeModal(4)">&times;</span>
+            <div class="modal-content" id="modal-image">
+                <div class="mySlides">
+                    <img src="images/Kanye%20Final.jpg" style="width:100%">
+                </div>
+            </div>
+        </div>
+
+
+
+        <br><br><br><br>
+    </div>
+    <div id="sidebar">
+        <div>
+            <a class="img" href="index.html">
+                <div class="circle">
+                    <div class="overlay">
+                    </div>
+                    <img src="sacred-geometry-lotus-flower-by-Vexels.png" />
+                </div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="#" style="font-size: larger; color: lightgrey">WORK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="footer">
+        <hr width="1200" align="left">
+        <span style="font-size: x-small; float:left;"><a href="https://www.vexels.com/vectors/preview/138662/sacred-geometry-lotus-flower"> Sacred geometry lotus flower </a> designed by Vexels</span>
+    </div>
+    <script>
+        function openModal(numImage) {
+            document.getElementsByClassName('modal')[numImage].style.display = "block";
+            document.getElementsByClassName('modal-content')[numImage].style.display = "block";
+            document.getElementsByClassName('mySlides')[numImage].style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal(numImage) {
+            document.getElementsByClassName('modal')[numImage].style.display = "none";
+            document.getElementsByClassName('modal-content')[numImage].style.display = "none";
+            document.getElementsByClassName('mySlides')[numImage].style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>

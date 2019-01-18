@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Righteous" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="index_scripts.js"></script>
+    <title>PodPals</title>
+</head>
+
+<body style="visibility: hidden;">
+    <!-- SIDE MENU -->
+    <div id="sidebar">
+        <a href="index.html"><img id="logo" src="images/podpals_logo_round.png" /></a>
+        <ul>
+            <li>My Photos</li>
+            <li><a href="groups.html">Groups</a></li>
+            <li>Create</li>
+        </ul>
+        <div class="user-pic">
+        </div>
+        <div class="personal-info">
+            <p>You</p>
+            <p>Settings</p>
+        </div>
+    </div>
+    <!-- CONTENT BODY -->
+    <div class="content-sec">
+        <div class="group-header">
+            <div class="group-banner">
+<!--<div class="tooltip"><span class="tooltiptext">Click here to edit group settings?</span> </div>-->
+                    <h1>You & Boo &#10084;</h1>
+          
+                <p class="subtitle">PodPals since August 5th, 2017</p>
+            </div>
+            <div class="group-member-pic" style="background: #E4DFE7 url(images/boo-pro-pic.png); background-size: cover">
+            </div>
+            <div class="group-member-pic" style="background: transparent url(images/gunter.jpeg);  background-size: cover">
+            </div>
+        </div>
+        <div id="config-albums-bar">
+            <label for="albums-layout">Display albums by:
+                <select name="albums-layout" id="config-albums-dropdown">
+                    <option value=""></option>
+                    <option value = "name">Album Name (A-Z)</option>
+                    <option value = "update">Most recently updated</option>
+                    <option value="creation">Most recently created</option>
+                </select>
+                <p class="subtitle">(Or drag and drop the top right-hand corners of album thumbnails to rearrange)</p>
+            </label>
+        </div>
+        <div class="album-sec">
+            <ul class="album-row">
+                <li class="album-block first">
+                    <a href="shenanigans-album.html">
+                        <div>
+                            <div class="album-cover" style="background: url(images/bunting-flag.png);">
+                                <img src="images/boo-icecream.png">
+                                <div class="album-info-overlay">
+                                    <div class="album-info-text">
+                                        <h3>Created: March 9th, 2018</h3>
+                                        <input type="number" name="month">
+                                        <input type="number" name="date">
+                                        <input type="number" name="year">
+                                        <input type="number" name="updateOrder">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-title">
+                                <h3>Shenanigans</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="album-block second">
+                    <a href="#">
+                        <div>
+                            <div class="album-cover" style="background: url(images/christmas-party.jpg); background-size: cover; background-position: center">
+                                <div class="album-info-overlay">
+                                    <div class="album-info-text">
+                                        <h3>Created: December 20th, 2017</h3>
+                                        <input type="number" name="month">
+                                        <input type="number" name="date">
+                                        <input type="number" name="year">
+                                        <input type="number" name="updateOrder">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-title">
+                                <h3>Christmas Party</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="album-block third">
+                    <div>
+                        <div class="album-cover" style="background:url(https://i.redd.it/fq74gan703q11.jpg); background-size: cover; background-position: center">
+                            <div class="album-info-overlay">
+                                <div class="album-info-text">
+                                    <h3>Created: June 1st, 2018</h3>
+                                    <input type="number" name="month">
+                                    <input type="number" name="date">
+                                    <input type="number" name="year">
+                                    <input type="number" name="updateOrder">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="album-title">
+                            <h3>Miscellaneous</h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $("body").css("visibility", "visible");
+            $(document).tooltip();
+            $.each($(".album-row"), function() {
+                $(this).sortable({
+                    update: function() {
+                        $("#config-albums-dropdown").val("");
+                    }
+                });
+                $(this).disableSelection();
+            });
+
+            $("input[name='month']").eq(0).val(02);
+            $("input[name='year']").eq(0).val(2018);
+            $("input[name='date']").eq(0).val(09);
+            $("input[name='month']").eq(1).val(11);
+            $("input[name='year']").eq(1).val(2017);
+            $("input[name='date']").eq(1).val(20);
+            $("input[name='month']").eq(2).val(05);
+            $("input[name='year']").eq(2).val(2018);
+            $("input[name='date']").eq(2).val(01);
+
+            $("input[name='updateOrder']").eq(0).val(0);
+            $("input[name='updateOrder']").eq(1).val(2);
+            $("input[name='updateOrder']").eq(2).val(1);
+            dateArray = [];
+            tempArray = [];
+            $.each($("input[name='month']"), function(index) {
+                var tempDate = new Date($("input[name='year']").eq(index).val(), $("input[name='month']").eq(index).val(), $("input[name='date']").eq(index).val());
+                dateArray[index] = tempDate;
+                tempArray[index] = tempDate;
+                console.log(index + ": " + tempDate);
+            });
+            tempArray.sort();
+        });
+
+
+        $("#config-albums-dropdown").change(function() {
+            console.log("Dropdown changing to: " + $(this).val());
+            switch ($(this).val()) {
+                case "name":
+                    sortByName();
+                    break;
+                case "update":
+                    sortByLastUpdate();
+                    break;
+                case "creation":
+                    sortByCreationDate();
+                    break;
+                default:
+                    sortByLastUpdate();
+            }
+        });
+
+        function sortByName() {
+            var albumNames = $(".album-title h3");
+            var albumNamesArray = [];
+            $(".album-sec").eq(0).append("<ul class='album-row ui-sortable'></ul>");
+            // Create an array to hold the names of the albums (in the order they are displayed)
+            var newRow = $(".album-row").eq(1);
+            $.each(albumNames, function(index) {
+                albumNamesArray[index] = $(this).text();
+                console.log(albumNamesArray[index]);
+            });
+            // Only begin sorting process if the albums aren't already in alphabetical order (figure this out later?)
+
+            albumNamesArray.sort();
+            $.each(albumNamesArray, function(index) {
+                var title = albumNamesArray[index];
+                var tempAlbum = $(".album-block:contains(" + title + ")");
+                newRow.append(tempAlbum.clone());
+            });
+            $(".album-sec").eq(0).append(newRow);
+            $(".album-row").eq(0).remove();
+            $(".album-row").eq(0).sortable({
+                update: function() {
+                    $("#config-albums-dropdown").val("");
+                }
+            });
+            $(".album-row").eq(0).disableSelection();
+            $.each($("input[name='month']"), function(index) {
+                var tempDate = new Date($("input[name='year']").eq(index).val(), $("input[name='month']").eq(index).val(), $("input[name='date']").eq(index).val());
+                dateArray[index] = tempDate;
+                tempArray[index] = tempDate;
+                console.log(index + ": " + tempDate);
+            });
+            tempArray.sort();
+        };
+
+        function sortByLastUpdate() {
+            $(".album-sec").eq(0).append("<ul class='album-row ui-sortable'></ul>");
+            var newRow = $(".album-row").eq(1);
+            var updateOrders = [];
+            $.each($("input[name='updateOrder']"), function(index) {
+                updateOrders[index] = $(this).val();
+            });
+            for (i = 0; i < 3; i++) {
+                var albumIndex = updateOrders.findIndex(function(element) {
+                    return element == i;
+                });
+                console.log("Album #: " + albumIndex + " is the " + (i + 1) + " most recently updated album.");
+                var tempAlbum = $(".album-block").eq(albumIndex);
+                newRow.append(tempAlbum.clone());
+            }
+            $(".album-sec").eq(0).append(newRow);
+            $(".album-row").eq(0).remove();
+            $(".album-row").eq(0).sortable({
+                update: function() {
+                    $("#config-albums-dropdown").val("");
+                }
+            });
+            $(".album-row").eq(0).disableSelection();
+            $.each($("input[name='month']"), function(index) {
+                var tempDate = new Date($("input[name='year']").eq(index).val(), $("input[name='month']").eq(index).val(), $("input[name='date']").eq(index).val());
+                dateArray[index] = tempDate;
+                tempArray[index] = tempDate;
+                console.log(index + ": " + tempDate);
+            });
+            tempArray.sort();
+        };
+
+        function sortByCreationDate() {
+            $(".album-sec").eq(0).append("<ul class='album-row ui-sortable'></ul>");
+            var newRow = $(".album-row").eq(1);
+            $.each(tempArray, function(index) {
+                var matchIndex = dateArray.findIndex(function(element) {
+                    return element === tempArray[index];
+                });
+                var match = dateArray.find(function(element) {
+                    return element === tempArray[index];
+                });
+                console.log("Found match at index: " + matchIndex + " for date: " + match);
+                var tempAlbum = $(".album-block").eq(matchIndex);
+                newRow.append(tempAlbum.clone());
+            });
+            $(".album-sec").eq(0).append(newRow);
+            $(".album-row").eq(0).remove();
+            $(".album-row").eq(0).sortable({
+                update: function() {
+                    $("#config-albums-dropdown").val("");
+                }
+            });
+            $(".album-row").eq(0).disableSelection();
+            $.each($("input[name='month']"), function(index) {
+                var tempDate = new Date($("input[name='year']").eq(index).val(), $("input[name='month']").eq(index).val(), $("input[name='date']").eq(index).val());
+                dateArray[index] = tempDate;
+                tempArray[index] = tempDate;
+                console.log(index + ": " + tempDate);
+            });
+            tempArray.sort();
+        };
+
+    </script>
+</body>
+
+</html>
