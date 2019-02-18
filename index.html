@@ -1,49 +1,174 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <title>Blocks2D Short Talk</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    </script>
+</head>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section id="slide1" data-background="media/color-blur-vr-classroom-2.jpg">
+                <h2>Virtual Reality in Education</h2>
+                <p>Patricia Sittikul</p>
+                <p>CSE 280 Spring 2019</p>
+                <p>Blocks2D</p>
+            </section>
+            <section id="slide2" data-state="overview_slide">
+                <div class="slide-title">
+                    <h2>Overview</h2>
+                </div>
+                <div class="slide-content">
+                    <blockquote>"<span style="font-weight: bold">Virtual reality (VR)</span> is an interactive computer-generated experience taking place within a simulated environment, incorporating sensory feedback, mainly auditory and visual."</blockquote>
+                    <br>
+                    <div class="topic-block fragment fade-up" data-fragment-index="1">The Power of Virtual Reality</div>
+                    <div class="topic-block fragment fade-up" data-fragment-index="2">Virtual Reality as Educational Magic</div>
+                </div>
+                <div class="slide-footer">
+                    <p>Blocks2D</p>
+                </div>
+            </section>
+            <section id="slide3" data-state="vr_power_slide">
+                <div class="slide-title">
+                    <h2>The Power of Virtual Reality</h2>
+                </div>
+                <div class="slide-content">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="fragment fade-up" data-fragment-index="1">Accessible</td>
+                                <td class="fragment fade-up image-cell" data-fragment-index="2"><img src="media/steam-vr.PNG"></td>
+                            </tr>
+                            <tr>
+                                <td class="fragment fade-up" data-fragment-index="3">Immersive</td>
+                                <td class="fragment fade-up image-cell" data-fragment-index="4"><img src="media/pokemon_go_news_1.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="slide-footer">
+                    <p>Blocks2D</p>
+                </div>
+            </section>
+            <section id="slide4">
+                <h2>Imaginative</h2>
+            </section>
+            <section id="slide5" data-background-video="media/gameplay1.MOV" data-background-video-loop="true" data-background-video-muted="true">
+            </section>
+            <section id="slide6" data-state="vr_power_slide">
+                <div class="slide-title">
+                    <h2>Virtual Reality as Educational Magic</h2>
+                </div>
+                <div class="slide-content">
+                    <ul>
+                        <li class="fragment fade-up" data-fragment-index="1">Educational Magic Toy
+                            <span class="fragment fade-up word-def" data-fragment-index="2"> - toys featuring virtual objects (e.g. story animations, 3D objects)</span>
+                        </li>
+                        <li class="fragment fade-up" data-fragment-index="3">Enhanced imagination and creativity</li>
+                        <li class="fragment fade-up" data-fragment-index="4">Promising learning tool for children with learning delays</li>
+                    </ul>
+                </div>
+                <div class="slide-footer">
+                    <p>Blocks2D</p>
+                </div>
+            </section>
+            <section id="slide7">
+                <div class="slide-title">
+                    <h2>Questions?</h2>
+                </div>
+            </section>
+            <section id="slide8">
+                <div class="slide-title">
+                    <h2>References</h2>
+                </div>
+                <div class="slide-content">
+                    <ol>
+                        <li>Yilmaz, R. M. (2016). Educational magic toys developed with augmented reality technology for early childhood education. Computers in Human Behavior, 54, 240-248. doi:10.1016/j.chb.2015.07.040</li>
+                        <li>Greenwood, C., Carta, J., Kelley, E., Guerrero, G., Kong, N., Atwater, J. and Goldstein, H. (2016). Systematic Replication of the Effects of a Supplementary, Technology-Assisted, Storybook Intervention for Preschool Children with Weak Vocabulary and Comprehension Skills. The Elementary School Journal, 116(4), pp.574-599.</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            parallaxBackgroundImage: '',
+            parallaxBackgroundSize: '',
+            controls: false,
+            keyboard: true,
+            fragmentInURL: true,
+            dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function() {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+            ]
+        });
+
+        //        Reveal.addEventListener('overview_slide', function() {
+        //            Reveal.addEventListener("fragmentshown", function(event) {
+        //                var fIndex = event.fragment.getAttribute("data-fragment-index");
+        //                console.log("Fragment has been shown: " + event.fragment.getAttribute("data-fragment-index"));
+        //                if (fIndex == 1) {
+        //                    $(".topic-block").eq(1).removeClass("fade-up");
+        //                    $(".topic-block").eq(1).addClass("shrink");
+        //                    $(".topic-block").eq(1).css("opacity", ".75");
+        //                    $(".topic-block").eq(1).data("fragment-index", 3);
+        //                }
+        //            });
+        //        }, false);
+        //        Reveal.addEventListener('vr_power_slide', function() {
+        //            Reveal.addEventListener("fragmentshown", function(event) {
+        //                var fIndex = event.fragment.getAttribute("data-fragment-index");
+        //                console.log("Fragment has been shown: " + event.fragment.getAttribute("data-fragment-index"));
+        //                if (fIndex == 1) {
+        //                    $(".topic-block").eq(1).removeClass("fade-up");
+        //                    $(".topic-block").eq(1).addClass("shrink");
+        //                    $(".topic-block").eq(1).data("fragment-index", 3);
+        //                }
+        //            });
+        //        }, false);
+
+    </script>
+</body>
+
 </html>
