@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Patricia Sittikul  |  pas217@lehigh.edu  |  CSE 198  |  HW1 -->
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:700|Oswald|Playfair+Display" rel="stylesheet">
+        <title>KYLO REN</title>
+    </head>
+
+    <body>
+        <img src="images/kylo-ren-star-wars-lightsaber.gif" id="lightsaber-gif" />
+        <div id="container">
+            <div id="header">
+                <h1>KYLO REN</h1>
+                <div id="header-overlay">
+                </div>
+            </div>
+            <div id="left-column">
+                <img src="images/shirtless-kylo-ren-crop.jpeg">
+                <h2>FUN FACTS</h2>
+                <ul>
+                    <li>I made my own lightsaber using a broken kyber crystal, which is why it's fiery and unstable - just like my soul.</li>
+                    <li>I run a popular Twitter page with a massive following.</li>
+                    <li>I made a guest appearance on SNL.</li>
+                    <li>Contrary to popular belief, no, this isn't a phase, this is who I am. Why does everyone keep asking me that?</li>
+                </ul>
+            </div>
+            <div id="main-column">
+                <h2>BIOGRAPHY</h2>
+                <h3>Early Life</h3>
+                <p>I was born one year after the Battle of Endor to negligent parents who, despite not being around for most of my life, sure acted like they had a right to tell me who I really am, when they don't. They're not a problem anymore though. Parents: can't live with 'em, can't live without 'em, am I right? Except I can. I can live without them.<br><br>I went through rigorous training, honing my combat skills as well as my use of the Force. I even learned how to make my own lightsaber. Eventually I emerged from the darkness of my formative years and became the Supreme Leader of the First Order.</p>
+                <h3>Life at Lehigh</h3>
+                <p>After a brief and disastrous time spent learning from my loser scrub of an uncle, I decided to come to Lehigh to develop the skills needed to achieve my dreams: destroying the Resistance and ruling everything. The coursework is also a nice distraction from the constant angst and turmoil I feel raging inside of me.</p>
+                <h2>FAVORITES</h2>
+                <ul class="list">
+                    <li>Breaking things</li>
+                    <li>Delivering monologues about good and evil, slowly and in a deep voice</li>
+                    <li>Sulking</li>
+                    <li>Thinking about Darth Vader</li>
+                    <li>Walking around shirtless</li>
+                    <li>Strong female characters</li>
+                </ul>
+                <h2>COURSES</h2>
+                <ul class="list">
+                    <li>Kill Your Idols: An Exploration in Literary Works About Killing One's Parents/Mentor Figures</li>
+                    <li>Advanced Laser Physics</li>
+                    <li>Leadership and Management</li>
+                    <li>Putting the FUN in DysFUNctional: the Psychology Behind Childhood Trauma and Dysfunctional Families</li>
+                </ul>
+                <h2>MUSIC</h2>
+                <table id="music-table" border="1">
+                    <thead>
+                        <th>Song</th>
+                        <th>Artist</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>I'm Not Okay (I Promise)</td>
+                            <td>My Chemical Romance</td>
+                        </tr>
+                        <tr>
+                            <td>The Kill</td>
+                            <td>Thirty Seconds to Mars</td>
+                        </tr>
+                        <tr>
+                            <td>My Immortal</td>
+                            <td>Evanescence</td>
+                        </tr>
+                        <tr>
+                            <td>In the End</td>
+                            <td>Linkin Park</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2><a href="https://twitter.com/KyloR3n" target="_blank">FOLLOW ME ON TWITTER</a></h2>
+                <a href="https://twitter.com/KyloR3n" target="_blank"><img src="images/emokyloren.PNG" id="emo-kylo-ren"></a>
+            </div>
+            <div id="footer">
+                <p style="text-align: center;">&#169; Patricia Sittikul 2018
+                </p>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </body>
+    <script>
+        $(document).ready(function() {
+            console.log("ready!");
+            $('#lightsaber-gif').delay(3600).fadeOut(800, function() {
+                $(this).remove;
+            });
+            $('#container').delay(4400).fadeIn(2200, function() {
+                console.log("Fade in complete")
+            });
+        });
+
+    </script>
+
+</html>

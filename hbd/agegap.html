@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<!--<![endif]-->
+<title>HBD</title>
+
+<head>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
+    <script type="text/javascript" src="../extras/jquery.min.1.7.js"></script>
+    <link type="text/css" rel="stylesheet" href="agegap-styles.css">
+    <link rel=" icon " href="../favicon-16x16.png " type="image/x-icon " />
+    <script type="text/javascript " src="../extras/modernizr.2.5.3.min.js "></script>
+</head>
+
+<body style="background-color: black">
+    <div style="float: left; width: 100%; clear: both; padding-top: 1%; text-align: center;"><a href="index.html ">Back</a></div>
+
+    <div id="timeline">
+        <div id="me">
+            <img src="ref/Circle-PNG-File.png " />
+            <p>(Me)<br>November 6, 1995</p>
+        </div>
+
+        <div class="bar pct-90 ">
+            <div class="inner">
+                <h2 id="duration"><span style="float: left; margin-left: 2%">&larr;</span>1 year, 8 months and 18 days<span style="float: right; margin-right: 2%;">&rarr;</span></h2>
+            </div>
+        </div>
+
+
+        <div id="you">
+            <img src="ref/Circle-PNG-File.png " />
+            <p>(You)<br> July 24, 1997</p>
+        </div>
+
+    </div>
+
+    <div id="events">
+        <div id="ninety-five">
+            <h4>1995:</h4>
+            <ul>
+                <li class="event">O.J. Simpson: innocent</li>
+                <li class="event ">Notorious B.I.G: alive</li>
+                <li class="event ">Titanic: not yet released</li>
+                <li class="event ">Macarena: big hit</li>
+                <li class="event ">Slavery: technically still legal in Mississippi (before March)</li>
+                <li class="event ">Harry Potter books: don't exist</li>
+            </ul>
+        </div>
+        <div id="ninety-seven">
+            <h4>1997:</h4>
+            <ul>
+                <li class="nevent">O.J. Simpson: guilty</li>
+                <li class="nevent ">Notorious B.I.G: not alive</li>
+                <li class="nevent ">Titanic: released and winning a fuck ton of awards</li>
+                <li class="nevent ">Macarena: old news</li>
+                <li class="nevent ">Slavery: officially abolished in Mississippi just two years prior</li>
+                <li class="nevent ">Harry Potter books: exist</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Trivia modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 style="text-align: center">1995 or 1997? <span class="close">&times;</span></h2>
+            </div>
+            <div id="modal-body">
+                <h2>Yikes. What happened to you being good at trivia?</h2>
+                <h2>I should never doubt your trivia skills.</h2>
+                <h2 id="correct">Correct!</h2>
+                <h2 id="wrong">Sorry champ, you're wrong.</h2>
+                <p id="prompt">How's your knowledge of late 90's culture and history? See just how fucking old I am compared to you by comparing what significant changes happened in the time between my birth and yours!</p>
+                <p class="question ninetyfive">
+                    When was O.J. Simpson found not guilty of murder in the case of People of the State of California v. Orenthal James Simpson?
+                </p>
+                <p class="question ninetyseven">
+                    When was Notorious B.I.G. murdered?
+                </p>
+                <p class="question ninetyseven">
+                    When was Titanic released?
+                </p>
+                <p class="question ninetyfive">
+                    When was the Macarena at peak popularity?
+                </p>
+                <p class="question ninetyfive">
+                    When was slavery abolished in Mississippi? (Yeah, they seriously still hadn't abolished it by now.)
+                </p>
+                <p class="question ninetyseven">
+                    When was the first Harry Potter book published?
+                </p>
+                <div id="answer-btns">
+                    <button type="button" class="answer" onclick="checkAns(1995)">1995</button>
+                    <button type="button" class="answer" onclick="checkAns(1997)">1997</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <h3 onclick="start()" id="try">Try me, bitch >></h3>
+                <h3 id="next">Next >></h3>
+                <h3 id="results" onclick="seeResults()">How'd you do?</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var score;
+
+        function start() {
+            score = 0;
+            $("#try").css("display", "none");
+            $("#prompt").css("display", "none");
+            $(".question").eq(0).css("display", "block");
+            $(".question").eq(0).addClass("current");
+            $(".answer").each(function() {
+                $(this).fadeIn(500);
+            });
+        };
+
+        function closeModal() {
+            console.log("Close");
+            $("#myModal").css("display", "none");
+        };
+
+        function seeResults() {
+            $("#results").css("display", "none");
+            $(".close").eq(0).css("display", "inline-block");
+            $(".close").eq(0).attr("onclick", "closeModal()");
+            console.log(score);
+            $("#modal-body h2").each(function() {
+                $(this).css("display", "none");
+            });
+            $(".current").eq(0).css("display", "none");
+            $(".answer").each(function() {
+                $(this).css("display", "none");
+            });
+            $("#modal-body").css("text-align", "center");
+            if (score > 3) {
+                $("#modal-body h2").eq(1).css("display", "block");
+            } else {
+                $("#modal-body h2").eq(0).css("display", "block");
+            }
+            $("#prompt").html(score + " out of 6");
+        };
+
+        function showMsg(cindex) {
+            switch (cindex) {
+                case 0:
+                    $(".question").eq(cindex).css("display", "none");
+                    $(".question").removeClass("current");
+                    $("#prompt").html("He was originally tried and found innocent in '95, and later found guilty in '97.");
+                    $("#prompt").css("display", "block");
+                    $(".event").eq(0).fadeIn(800);
+                    $(".nevent").eq(0).fadeIn(800);
+                    $("#next").attr("onclick", "nextQ(1)");
+                    $("#next").fadeIn(800);
+                    break;
+                case 1:
+                    $(".question").eq(cindex).css("display", "none");
+                    $(".question").removeClass("current");
+                    $("#prompt").html("Notorious B.I.G. was murdered on March 9th, 1997. RIP. Coincidentally, March 9th is also when we officially started dating lol.");
+                    $("#prompt").css("display", "block");
+                    $(".event").eq(1).fadeIn(800);
+                    $(".nevent").eq(1).fadeIn(800);
+                    $("#next").attr("onclick", "nextQ(2)");
+                    $("#next").fadeIn(800);
+                    break;
+                case 2:
+                    $(".question").eq(cindex).css("display", "none");
+                    $(".question").removeClass("current");
+                    $("#prompt").html("Titanic was released on December 19th, 1997 and won 11 Oscars, tying Ben-Hur for most Oscars won by a single film. (Overrated, in my opinion.)");
+                    $("#prompt").css("display", "block");
+                    $(".event").eq(2).fadeIn(800);
+                    $(".nevent").eq(2).fadeIn(800);
+                    $("#next").attr("onclick", "nextQ(3)");
+                    $("#next").fadeIn(800);
+                    break;
+                case 3:
+                    $(".question").eq(cindex).css("display", "none");
+                    $(".question").removeClass("current");
+                    $("#prompt").html("The Macarena was in its prime in 1995, and started to die out by 1997 (thank God).");
+                    $("#prompt").css("display", "block");
+                    $(".event").eq(3).fadeIn(800);
+                    $(".nevent").eq(3).fadeIn(800);
+                    $("#next").attr("onclick", "nextQ(4)");
+                    $("#next").fadeIn(800);
+                    break;
+                case 4:
+                    $(".question").eq(cindex).css("display", "none");
+                    $(".question").removeClass("current");
+                    $("#prompt").html("Mississippi voted to ratify the 13th Amendment in 1995, BUT TECHNICALLY they didn't officially abolish slavery until 2013 because they forgot to notify the U.S. Archivist of their vote ¯\\_(ツ)_/¯");
+                    $("#prompt").css("display", "block");
+                    $(".event").eq(4).fadeIn(800);
+                    $(".nevent").eq(4).fadeIn(800);
+                    $("#next").attr("onclick", "nextQ(5)");
+                    $("#next").fadeIn(800);
+                    break;
+                case 5:
+                    $(".question").eq(cindex).css("display", "none");
+                    $(".question").removeClass("current");
+                    $("#prompt").html("Harry Potter and the Philosopher's Stone was published in the U.K. in 1997. This one really makes me feel old.");
+                    $("#prompt").css("display", "block");
+                    $(".event").eq(5).fadeIn(800);
+                    $(".nevent").eq(5).fadeIn(800);
+                    $("#results").fadeIn(800);
+                    break;
+            }
+        };
+
+        function nextQ(num) {
+            $(".answer").each(function() {
+                $(this).removeAttr("disabled");
+            });
+            $("#modal-body h2").each(function() {
+                $(this).css("display", "none");
+            });
+            $(".answer").each(function() {
+                $(this).css("background-color", "lightgreen");
+            });
+            $("#next").css("display", "none");
+            $("#prompt").css("display", "none");
+            $(".question").eq(num).css("display", "block");
+            $(".question").eq(num).addClass("current");
+        };
+
+        function checkAns(year) {
+            $(".answer").each(function() {
+                $(this).attr("disabled", "disabled");
+            });
+            var current = $(".current").eq(0);
+            var currIndex = $(".question").index(current);
+
+            // Guessed 1995, correct
+            if (year == 1995 && current.hasClass("ninetyfive")) {
+                $(".answer").eq(0).css("background-color", "darkgreen");
+                $(".answer").eq(1).css("background-color", "darkred");
+                $("#correct").css("display", "block");
+                showMsg(currIndex);
+                score++;
+
+                // Guessed 1997, wrong
+            } else if (year == 1997 && !current.hasClass("ninetyseven")) {
+                $(".answer").eq(0).css("background-color", "darkgreen");
+                $(".answer").eq(1).css("background-color", "darkred");
+                $("#wrong").css("display", "block");
+                showMsg(currIndex);
+
+                // Guessed 1997, correct
+            } else if (year == 1997 && current.hasClass("ninetyseven")) {
+                $(".answer").eq(1).css("background-color", "darkgreen");
+                $(".answer").eq(0).css("background-color", "darkred");
+                $("#correct").css("display", "block");
+                showMsg(currIndex);
+                score++;
+
+                // Guessed 1995, wrong
+            } else if (year == 1995 && !current.hasClass("ninetyfive")) {
+                $(".answer").eq(0).css("background-color", "darkred");
+                $(".answer").eq(1).css("background-color", "darkgreen");
+                $("#wrong").css("display", "block");
+                showMsg(currIndex);
+            }
+        };
+
+        //            $(document).ready(function() {
+        //                $("#right-arrow ").css("transition-duration ", "3s ");
+        //                console.log("ready! ");
+        //
+        //                window.setTimeout(function() {
+        //                    $("#right-arrow ").css("float ", "right ");
+        //                }, 1200);
+        //            });
+        $(document).ready(function() {
+            $("#me ").fadeIn(1000);
+
+            window.setTimeout(function() {
+                $("#you").fadeIn(1000);
+            }, 3200);
+            window.setTimeout(function() {
+                $("#duration ").fadeIn(800);
+                $("#duration ").css("display ", "inline-block ");
+            }, 3100);
+
+            window.setTimeout(function() {
+                $("#ninety-five h4:first-child").fadeIn(1000)
+            }, 5000);
+            //                var delayTime = 1000;
+            //                $(".event ").each(function() {
+            //                    $(this).delay(delayTime).fadeIn(1000);
+            //                    delayTime += 1000;
+            //                });
+            //            }, 6800);
+            //
+            window.setTimeout(function() {
+                $("#ninety-seven h4").fadeIn(800)
+            }, 5000);
+
+
+
+            window.setTimeout(function() {
+                $("#myModal").css("display", "block");
+            }, 5000);
+            //                var delayTime = 1000;
+            //                $(".nevent ").each(function() {
+            //                    $(this).delay(delayTime).fadeIn(1000);
+            //                    delayTime += 1000;
+            //                });
+            //            }, 14000);
+            //                window.setTimeout(function() {
+            //                    $("#ninety-seven ").fadeIn(1000);
+            //                    $("#ninety-seven ").css("display ", "inline-block ");
+            //                }, 7000);
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Righteous" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="index_scripts.js"></script>
+    <title>PodPals</title>
+</head>
+
+<body style="visibility: hidden;">
+    <!-- SIDE MENU -->
+    <div id="sidebar">
+        <a href="index.html"><img id="logo" src="images/podpals_logo_round.png" /></a>
+        <ul>
+            <li>My Photos</li>
+            <li><a href="groups.html">Groups</a></li>
+            <li>Create</li>
+        </ul>
+        <div class="user-pic">
+        </div>
+        <div class="personal-info">
+            <p>You</p>
+            <p>Settings</p>
+        </div>
+    </div>
+    <!-- CONTENT BODY -->
+    <div class="content-sec">
+        <div class="group-header">
+            <div class="group-banner">
+                <!--
+<div class="tooltip"><span class="tooltiptext">Should clicking on this enable mass editing of the album (i.e. delete multiple photos)?</span>
+</div>
+-->
+                <h1 class="not-link">Shenanigans</h1>
+
+                <p class="subtitle">Created: March 9th, 2018<br>4 photos</p>
+            </div>
+        </div>
+        <div class="album-sec">
+            <div class="photo-row">
+                <div class="album-photo-block">
+                    <img class="photo" src="images/couple-date-small.jpeg" onclick="openModal(); currentSlide(0)">
+                    <div class="op-pic" style="background: #e4dfe7 url(images/boo-pro-pic.png) no-repeat; background-size: cover;"></div>
+                </div>
+                <div class="album-photo-block">
+                    <img class="photo" src="images/shy-boo.png" style="background: url(images/bunting-flag.png)" onclick="openModal(); currentSlide(1)" />
+                    <div class="op-pic" style="background: transparent url(images/gunter.jpeg);  background-size: cover"></div>
+                </div>
+                <div class="album-photo-block">
+                    <img class="photo" src="images/couple-heart-small.jpeg" onclick="openModal(); currentSlide(2)">
+                    <div class="op-pic" style="background: transparent url(images/gunter.jpeg);  background-size: cover"></div>
+                </div>
+                <div class="album-photo-block">
+                    <img class="photo" src="images/boo-icecream.png" style="background: url(images/bunting-flag.png); width: 35%; padding-left: 25%; padding-right: 25%" onclick="openModal(); currentSlide(3)">
+                    <div class="op-pic" style="background: transparent url(images/gunter.jpeg);  background-size: cover"></div>
+
+                </div>
+            </div>
+        </div>
+        <div id="imgModal" class="album modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="imgSlides">
+                    <div class="op-pic" style="width: 75px; height: 75px;background: #e4dfe7 url(images/boo-pro-pic.png) no-repeat; background-size: cover;"></div>
+                    <img src="images/couple-date-small.jpeg" />
+                    <p class="caption" style="display: none">Remember that time we went hiking in the middle of January???</p>
+                    <ul class="comment-group">
+                        <li class="comment">
+                            <div class="commenter-pic" style="background: transparent url(images/gunter.jpeg); background-size: cover"></div>Why did we do that it was so cold</li>
+                        <li class="comment">
+                            <div class="commenter-pic" style="background: #e4dfe7 url(images/boo-pro-pic.png); background-size: cover"></div>Lol</li>
+                    </ul>
+                </div>
+                <div class="imgSlides">
+                    <div class="op-pic" style="width: 75px; height: 75px;background: transparent url(images/gunter.jpeg);  background-size: cover"></div>
+                    <img src="images/shy-boo.png" style="background: url(images/bunting-flag.png)" />
+                    <p class="caption">LOLLLLL</p>
+                    <ul class="comment-group">
+                        <li class="comment">
+                            <div class="commenter-pic" style="background: #e4dfe7 url(images/boo-pro-pic.png); background-size: cover"></div>Why does this picture exist
+                        </li>
+                    </ul>
+                </div>
+                <div class="imgSlides">
+                    <div class="op-pic" style="width: 75px; height: 75px;background: transparent url(images/gunter.jpeg);  background-size: cover"></div>
+                    <img src="images/couple-heart-small.jpeg" />
+                    <p class="caption">Remember that time we went hiking when it was actually nice out but then you got really sunburnt and I tripped over a rock in front of everyone</p>
+                    <ul class="comment-group">
+                        <li class="comment">
+                            <div class="commenter-pic" style="background: #e4dfe7 url(images/boo-pro-pic.png); background-size: cover"></div>I can't help it I'm literally a ghost what do you want from me</li>
+                    </ul>
+                </div>
+                <div class="imgSlides">
+                    <p class="caption">Lol what are you even doing here</p>
+                    <div class="op-pic" style="width: 75px; height: 75px;background: transparent url(images/gunter.jpeg);  background-size: cover"></div>
+                    <img src="images/boo-icecream.png" style="background: url(images/bunting-flag.png); width: 35%; padding-left: 25%; padding-right: 25%" />
+                    <ul class="comment-group">
+                        <li class="comment">
+                            <div class="commenter-pic" style="background: #e4dfe7 url(images/boo-pro-pic.png); background-size: cover"></div>Living my best life</li>
+                        <li class="comment">
+                            <div class="commenter-pic" style="background: transparent url(images/gunter.jpeg); background-size: cover"></div>Didn't you just say you're literally a ghost</li>
+                    </ul>
+                </div>
+                <!--
+ Next/previous controls
+<a class="prev" onclick="slideControls(-1)">&#10094;</a>
+<a class="next" onclick="slideControls(1)">&#10095;</a>
+-->
+                <!-- Caption/comment section -->
+                <div class="caption-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $("body").css("visibility", "visible");
+        });
+
+        $(document).keydown(function(e) {
+            if (document.getElementById("imgModal").style.display == "block") {
+                switch (e.which) {
+                    case 37:
+                        slideControls(-1);
+                        break;
+                    case 39:
+                        slideControls(1);
+                        break;
+                    case 13:
+                        if ($("#comment-box").val().length > 0) {
+                            addComment();
+                        }
+                        break;
+                    case 27:
+                        closeModal();
+                        break;
+                    default:
+                        return;
+                }
+                e.preventDefault();
+            }
+        });
+
+        function addComment() {
+            console.log($("#comment-box").val());
+            comment = $("#comment-box").val();
+            $(".comment-group-active").eq(0).append("<li class='comment'><div class='commenter-pic' style='background: transparent url(images/gunter.png); background-size: cover'></div>" + comment + "</li>");
+            $("#comment-box").val("");
+        }
+
+    </script>
+</body>
+
+</html>

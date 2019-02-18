@@ -1,0 +1,90 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<title>HBD</title>
+
+<head>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="hbd-styles.css">
+    <link rel="icon" href="../favicon-16x16.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="flipbook-viewport">
+        <div class="container">
+            <div class="flipbook">
+                <div>
+                    <h1>I know you're not big on birthdays but...</h1>
+                </div>
+                <div>
+                </div>
+                <div>
+                    <h1>...if it weren't for your birthday, I wouldn't be getting that good dick.</h1>
+                    <div id="things">
+                        <p>I made you some things:</p>
+                        <p><a href="agegap.html">A visual representation of the age gap between us</a></p>
+                        <p><a href="who.html">A way to determine which one of us is truly the old one</a></p>
+                        <p><a href="https://open.spotify.com/user/1290664189/playlist/5w0ZEEoOKdguKA3AgLhr2H?si=kmSSSv0qRVuNHW7Dq2e9Gg" target="_blank">A playlist<br>(You can copy this link and paste it into the Spotify app search bar to pull up the playlist.)</a></p>
+                    </div>
+                </div>
+                <div>
+                    <h3> &#10084;<br>Your weeaboo bitch</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../extras/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="../extras/modernizr.2.5.3.min.js"></script>
+
+    <script type="text/javascript">
+        // $(document).ready(function() { // window.setTimeout(function() { // $("#playlist").fadeIn(2500); // }, 4000); // });
+
+        function loadApp() {
+
+            // Create the flipbook
+
+            $('.flipbook').turn({
+                // Width
+
+                width: 922,
+
+                // Height
+
+                height: 600,
+
+                // Elevation
+
+                elevation: 50,
+
+                // Enable gradients
+
+                gradients: true,
+
+                // Auto center this flipbook
+
+                autoCenter: true
+
+            });
+        }
+
+        // Load the HTML4 version if there's not CSS transform
+
+        yepnope({
+            test: Modernizr.csstransforms,
+            yep: ['../lib/turn.js'],
+            nope: ['../lib/turn.html4.min.js'],
+            both: ['hbd-styles.css'],
+            complete: loadApp
+        });
+
+    </script>
+
+</body>
+
+</html>
