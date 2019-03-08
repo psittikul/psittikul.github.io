@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<title>Please Father</title>
+
+<head>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../favicon-16x16.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="flipbook-viewport">
+        <div class="container">
+            <div class="flipbook">
+                <div style="background-color: #F6F6F6">
+                    <h1 id="please">
+                        พ่อจะมาดูการนำเสนอของหนูไหม</h1>
+                    <img style="width: 100%" src="croissant.jpg">
+                </div>
+                <div class="event-details">
+                    <h1>The honor of your presence is requested at:</h1>
+                    <div style="width: 80%; margin: auto; box-shadow: 1px 1px 1px 1px darkgrey">
+                        <h1 style="color:#502D0E">the 2019 Lehigh University Ethics Symposium</h1>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <h1>Your sad Asian daughter will be presenting and needs your validation.</h1>
+                    <h2>When: Saturday, March 23rd<br>10 a.m. - 3:30 p.m. (EST)</h2>
+                    <h2><a href="https://lu-ethics-symposium.cas2.lehigh.edu/content/register" target="_blank" style="color: #502D0E; font-family: 'Merriweather', serif">RSVP HERE</a></h2>
+                </div>
+                <div class="event-details">
+                    <p>Every second of my life I wonder if I have brought you honor and I fear I will die feeling unworthy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../extras/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="../extras/modernizr.2.5.3.min.js"></script>
+
+    <script type="text/javascript">
+        $("#please").on("mouseover", function() {
+            $(this).text("Father will you please come see my presentation?");
+        });
+        $("#please").on("mouseout", function() {
+            $(this).text("พ่อจะมาดูการนำเสนอของหนูไหม");
+        });
+        // $(document).ready(function() { // window.setTimeout(function() { // $("#playlist").fadeIn(2500); // }, 4000); // });
+
+        function loadApp() {
+
+            // Create the flipbook
+
+            $('.flipbook').turn({
+                // Width
+
+                width: 922,
+
+                // Height
+
+                height: 600,
+
+                // Elevation
+
+                elevation: 50,
+
+                // Enable gradients
+
+                gradients: true,
+
+                // Auto center this flipbook
+
+                autoCenter: true
+
+            });
+        }
+
+        // Load the HTML4 version if there's not CSS transform
+
+        yepnope({
+            test: Modernizr.csstransforms,
+            yep: ['../lib/turn.js'],
+            nope: ['../lib/turn.html4.min.js'],
+            both: ['hbd-styles.css'],
+            complete: loadApp
+        });
+
+    </script>
+
+</body>
+
+</html>
