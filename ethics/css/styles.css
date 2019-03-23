@@ -18,6 +18,36 @@
     background: rgba(255, 255, 255, 0.25);
 }
 
+.reveal .quote-sm {
+    font-size: 30px;
+}
+
+.reveal .quote-author {
+    font-size: 28px;
+    font-style: italic;
+    text-align: right;
+}
+
+.reveal .quote-citation {
+    font-style: italic;
+    text-align: right;
+    font-size: 20px;
+}
+
+table .desc {
+    font-style: italic;
+    font-size: 36px;
+}
+
+#tumblrExampleTable td {
+    border-bottom: none;
+}
+
+#tumblrExampleTable img {
+    margin: 0;
+}
+
+
 section h1.slide-title {
     text-transform: none;
     font-size: 54px;
@@ -39,6 +69,10 @@ body {
     background-color: #111111;
 }
 
+.reveal section .topic-cover-img {
+    width: 60%;
+}
+
 @keyframes float {
     0% {
         /*        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);*/
@@ -54,21 +88,18 @@ body {
     }
 }
 
-#phonescreen {
-    position: absolute;
-    top: 35%;
-    width: 100px;
-    height: 120px;
-    transform: matrix3d(1.4, 1, 0, 0.0002, -2.45, 1.15, 1, 0.002, 0, 0, 1, 0, 330, 110, 19, 1);
-    transform-origin: 0px 0px 0px;
-    background: rgba(255, 0, 0, .75);
-}
 
 
 #coverSlideImg {
     display: inline-block;
     width: 50%;
     /*    animation: float 6s ease-in-out infinite;*/
+}
+
+.topic-card-row .topic-card img {
+    border: none;
+    box-shadow: none;
+    background: none;
 }
 
 .topic-card-row {
@@ -78,11 +109,13 @@ body {
 
 .topic-card-row .topic-card {
     display: inline-block;
+    float: left;
     width: 30%;
+    margin: 6px;
     border: double white 10px;
     border-radius: 1rem;
-    height: 35rem;
-    background-color: #4d4d4d;
+    height: 32rem;
+    background-color: #bdbdbd;
 }
 
 .topic-card-row .topic-card:nth-of-type(2) {
@@ -91,4 +124,40 @@ body {
 
 .topic-card-row .topic-card:nth-of-type(3) {
     animation-delay: .75s;
+}
+
+.reveal section img {
+    background-color: #bdbdbd;
+}
+
+.card-title {
+    background-color: #4d4d4d;
+    position: absolute;
+    width: 30%;
+    bottom: 16px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-title h3 {
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+#issues {
+    background: url('../issues_spritesheet.png') left center;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    animation: play 1s steps(10) infinite;
+}
+
+@keyframes play {
+    100% {
+        background-position: -16000px 0;
+    }
+}
+
+.reveal .description {
+    font-size: xx-large;
 }
