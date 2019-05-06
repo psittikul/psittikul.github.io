@@ -26,12 +26,17 @@ a.nav-link {
   transition: 0.2s;
 }
 
-a.nav-link:hover {
+a.nav-link:not(.active):hover {
   color: #dedede;
 }
 
 .nav-link.active {
   font-weight: 600;
+  cursor: default;
+}
+
+.nav-link.active:hover {
+  color: initial;
 }
 
 .circle {
@@ -82,8 +87,6 @@ a.nav-link:hover {
 }
 
 #sidenav.flex-column {
-  float: right;
-  width: 20%;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 #sidenav.flex-column img {
@@ -92,12 +95,13 @@ a.nav-link:hover {
 }
 
 .main {
-  float: left;
-  width: 70%;
+  font-family: "Questrial", sans-serif;
 }
 
 #footer {
   clear: both;
+  text-align: center;
+  font-size: 0.75rem;
 }
 
 /*# sourceMappingURL=ps-styles.css.map */

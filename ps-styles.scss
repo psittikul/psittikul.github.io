@@ -32,12 +32,18 @@ a.nav-link {
     transition: 0.2s;
 }
 
-a.nav-link:hover {
+
+a.nav-link:not(.active):hover {
     color: $highlight-color;
 }
 
 .nav-link.active {
     font-weight: 600;
+    cursor: default;
+}
+
+.nav-link.active:hover {
+    color: initial;
 }
 
 .circle {
@@ -89,22 +95,19 @@ a.nav-link:hover {
 
 
 #sidenav.flex-column {
-    float: right;
-    width: 20%;
     border-left: 1px solid rgba(0, 0, 0, .1);
     img {
         height: 100%;
         margin: auto;
     }
-
 }
 
 .main {
-    float: left;
-    width: 70%;
+    font-family: $body-font;
 }
-
 
 #footer {
     clear: both;
+    text-align: center;
+    font-size: .75rem;
 }
