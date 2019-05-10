@@ -22,9 +22,29 @@
             var bananaYellow = 'rgba(255, 226, 38, 1)';
             var bondiBlue = '#009FB7';
             $('#map').usmap({
-                'stroke-width': 0,
-                'stateStyles': {
+                labelBackingStyles: {
+                    fill: '#ddd',
+                    'cursor': 'default'
+                },
+                labelBackingHoverStyles: {
                     fill: '#ddd'
+                },
+                stateSpecificLabelBackingHoverStyles: {
+                    'DC': {
+                        fill: bondiBlue
+                    }
+                },
+                stateSpecificLabelBackingStyles: {
+                    'DC': {
+                        fill: bananaYellow
+                    }
+                },
+                labelTextStyles: {
+                    'font-family': 'Oswald'
+                },
+                'stateStyles': {
+                    fill: '#ddd',
+                    'stroke-width': .5
                 },
                 'stateHoverStyles': {
                     fill: '#ddd'
@@ -47,6 +67,14 @@
                     },
                     'NC': {
                         fill: bananaYellow
+                    },
+                    'AK': {
+                        fill: 'none',
+                        'stroke-width': 0
+                    },
+                    'HI': {
+                        fill: 'none',
+                        'stroke-width': 0
                     }
                 },
                 'stateSpecificHoverStyles': {
