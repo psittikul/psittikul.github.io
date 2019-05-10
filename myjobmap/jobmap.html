@@ -75,6 +75,9 @@
                     'HI': {
                         fill: 'none',
                         'stroke-width': 0
+                    },
+                    'NY': {
+                        fill: bananaYellow
                     }
                 },
                 'stateSpecificHoverStyles': {
@@ -100,17 +103,11 @@
                         //return false;
                     }
                 },
-
-
-                'click': function(event, data) {
-                    $('#alert')
-                        .text('Click ' + data.name + ' on map 1')
-                        .stop()
-                        .css('backgroundColor', '#ff0')
-                        .animate({
-                            backgroundColor: '#ddd'
-                        }, 1000);
-                }
+                'clickState': {
+                    'GA': function(event, data) {
+                        alert("State of Georgia was clicked!");
+                    }
+                },
             });
         });
 
