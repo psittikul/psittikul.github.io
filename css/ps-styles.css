@@ -1,0 +1,133 @@
+body {
+  color: white !important;
+  font-family: "Raleway", sans-serif;
+  background-color: #111 !important;
+}
+
+a {
+  color: white !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: grey;
+}
+
+#header {
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+}
+#header .navbar-brand {
+  font-size: 2.5rem;
+  color: white;
+}
+#header .navbar-brand.nav-link {
+  padding: 0.5rem 0;
+}
+
+#titleUnderline {
+  margin-top: 0;
+  border-bottom: solid thin #f0f0f0;
+}
+
+.nav-item {
+  font-family: "Oswald", sans-serif;
+}
+
+a.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+a.nav-link:not(.active):hover {
+  color: #FBD3E9;
+  background: -webkit-linear-gradient(to bottom, #BB377D, #FBD3E9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #BB377D, #FBD3E9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  cursor: default;
+}
+
+.nav-link.active:hover {
+  color: inherit;
+}
+
+.circle {
+  border-radius: 100%;
+  display: flex;
+  flex: 0 0 125px;
+  height: 125px;
+  width: 125px;
+  overflow: hidden;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  background-color: white;
+}
+
+.circle:hover {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.overlay {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.25s;
+  z-index: 1;
+  background: -webkit-linear-gradient(to left, rgba(29, 38, 113, 0.65), rgba(195, 55, 100, 0.65));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, rgba(29, 38, 113, 0.65), rgba(195, 55, 100, 0.65));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+#sidenav img:hover {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#sidenav.flex-column {
+  border-left: 1px solid white;
+}
+#sidenav.flex-column img {
+  height: 100%;
+  margin: auto;
+}
+
+.main {
+  font-family: "Raleway", sans-serif;
+}
+
+#footer {
+  clear: both;
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: "Raleway", sans-serif;
+}
+#footer #pageUnderline {
+  border-bottom: solid thin #f0f0f0;
+}
+
+/*# sourceMappingURL=ps-styles.css.map */
