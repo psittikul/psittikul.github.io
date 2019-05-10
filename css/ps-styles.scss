@@ -20,14 +20,28 @@ a:hover {
     color: $highlight-color;
 }
 
+
 #header {
     font-family: $title-font;
     .navbar-brand {
         font-size: 2.5rem;
         color: white;
     }
+    h1 {
+        display: inline;
+    }
     .navbar-brand.nav-link {
         padding: .5rem 0;
+    }
+    img {
+        height: 100%;
+    }
+    button {
+        border: none;
+        background: none;
+    }
+    button:focus {
+        outline: none;
     }
     padding: 0;
 }
@@ -40,38 +54,39 @@ a:hover {
 
 .nav-item {
     font-family: $title-font;
+    font-size: larger;
 }
 
-a.nav-link {
+.nav-item {
     text-decoration: none;
     color: white;
     transition: 0.4s;
 }
 
 
-a.nav-link:not(.active):hover {
+nav-item:not(.active):hover {
     color: $highlight-color;
 }
 
-.nav-link.active {
+.nav-item.active {
     font-weight: 600;
     cursor: default;
 }
 
 
-.nav-link.active:hover {
+.nav-item.active:hover {
     color: inherit;
 }
 
 .circle {
     border-radius: 100%;
-    display: flex;
-    flex: 0 0 125px;
-    height: 125px;
-    width: 125px;
+    display: inline-flex;
+    flex: 0 0 4rem;
+    height: 4rem;
+    width: 4rem;
     overflow: hidden;
     justify-content: center;
-    margin: auto;
+    margin-right: 1rem;
     position: relative;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
@@ -107,19 +122,11 @@ a.nav-link:not(.active):hover {
 }
 
 
-#sidenav img:hover {
+#header img:hover {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
-
-#sidenav.flex-column {
-    border-left: 1px solid rgba(255, 255, 255, 1);
-    img {
-        height: 100%;
-        margin: auto;
-    }
-}
 
 .main {
     font-family: $body-font;

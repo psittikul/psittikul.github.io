@@ -21,8 +21,21 @@ a:hover {
   font-size: 2.5rem;
   color: white;
 }
+#header h1 {
+  display: inline;
+}
 #header .navbar-brand.nav-link {
   padding: 0.5rem 0;
+}
+#header img {
+  height: 100%;
+}
+#header button {
+  border: none;
+  background: none;
+}
+#header button:focus {
+  outline: none;
 }
 
 #titleUnderline {
@@ -32,43 +45,37 @@ a:hover {
 
 .nav-item {
   font-family: "Oswald", sans-serif;
+  font-size: larger;
 }
 
-a.nav-link {
+.nav-item {
   text-decoration: none;
   color: white;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
-a.nav-link:not(.active):hover {
-  color: #FBD3E9;
-  background: -webkit-linear-gradient(to bottom, #BB377D, #FBD3E9);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #BB377D, #FBD3E9);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+nav-item:not(.active):hover {
+  color: grey;
 }
 
-.nav-link.active {
+.nav-item.active {
   font-weight: 600;
   cursor: default;
 }
 
-.nav-link.active:hover {
+.nav-item.active:hover {
   color: inherit;
 }
 
 .circle {
   border-radius: 100%;
-  display: flex;
-  flex: 0 0 125px;
-  height: 125px;
-  width: 125px;
+  display: inline-flex;
+  flex: 0 0 4rem;
+  height: 4rem;
+  width: 4rem;
   overflow: hidden;
   justify-content: center;
-  margin: auto;
+  margin-right: 1rem;
   position: relative;
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
   transition: transform 0.8s ease-in-out;
@@ -103,17 +110,9 @@ a.nav-link:not(.active):hover {
   opacity: 1;
 }
 
-#sidenav img:hover {
+#header img:hover {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
-}
-
-#sidenav.flex-column {
-  border-left: 1px solid white;
-}
-#sidenav.flex-column img {
-  height: 100%;
-  margin: auto;
 }
 
 .main {
