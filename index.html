@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
+    <script src="data/projects.js"></script>
     <link rel="stylesheet" type="text/css" href="css/ps-styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Patricia Sittikul</title>
 </head>
@@ -15,16 +17,7 @@
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg" id="header">
-            <a class="navbar-brand nav-link active" href="#">
-                <!--
-<div class="circle">
-    <div class="overlay">
-    </div>
-    <img src="sacred-geometry-lotus-Vexels.png" />
-</div>
--->
-                <h1>Patricia Sittikul</h1>
-            </a>
+            <h1>Patricia Sittikul</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -32,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.html">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="work.html">Portfolio</a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -47,6 +40,80 @@
         <div class="row">
             <div class="main col">
                 <h2>Latest Work</h2>
+                <div class="card-deck current-work">
+                    <div class="card">
+                        <img src="images/autism-blogs.PNG" class="card-img-top">
+                        <div class="middle-container">
+                        </div>
+                        <div class="middle">
+                            <a class="website-link" data-pid="2">
+                                <div class="text">
+                                    Website
+                                </div>
+                            </a>
+                            <a class="details-link" data-pid="2">
+                                <div class="text">
+                                    Project Details
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">"PodPals" Photo Sharing Application</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Tags: JavaScript, PHP</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/myjobmap.PNG" class="card-img-top">
+                        <div class="middle-container">
+                        </div>
+                        <div class="middle">
+                            <a class="website-link" data-pid="0">
+                                <div class="text">
+                                    Website
+                                </div>
+                            </a>
+                            <a class="details-link" data-pid="0">
+                                <div class="text">
+                                    Project Details
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">My Job Map</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural lead-in.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Tags: JavaScript, PHP, data visualization</small>
+                        </div>
+                    </div>
+                    <div class="card" data-pid="2">
+                        <img src="images/autism-blogs.PNG" class="card-img-top" alt="Topicalizer Autism Blogs" />
+                        <div class="middle-container">
+                        </div>
+                        <div class="middle">
+                            <a class="website-link" data-pid="1">
+                                <div class="text">Website</div>
+                            </a>
+                            <a class="details-link" data-pid="1">
+                                <div class="text">Project Details</div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Topicalizer Autism Blogs Visualizer</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural lead-in.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Tags: JavaScript, D3.js, data visualization</small>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="see-more"><a href="portfolio.html">See all work <i class="fas fa-angle-double-right"></i></a></p>
             </div>
         </div>
         <div id="footer">
@@ -58,6 +125,21 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $.each($(".website-link"), function() {
+            var pid = $(this).data("pid");
+            var url = projects[pid]['website'];
+            $(this).attr("href", url);
+            $(this).attr("target", "_blank");
+        });
+        $.each($(".details-link"), function() {
+            var pid = $(this).data("pid");
+            var url = "portfolio.html#" + projects[pid]['hash'];
+            $(this).attr("href", url);
+            $(this).attr("target", "_blank");
+        });
+
+    </script>
 </body>
 
 </html>

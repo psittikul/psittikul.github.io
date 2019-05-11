@@ -6,11 +6,15 @@ body {
 
 a {
   color: white !important;
+  transition: 0.25s;
 }
 
 a:hover {
   text-decoration: none !important;
-  color: grey;
+}
+
+.current-work .card-text {
+  color: black;
 }
 
 #header {
@@ -23,8 +27,13 @@ a:hover {
 }
 #header h1 {
   display: inline;
+  margin-right: 1rem;
+  padding: 0.5rem 0;
 }
-#header .navbar-brand.nav-link {
+#header h1 a:hover {
+  color: white !important;
+}
+#header #navbarSupportedContent.nav-link {
   padding: 0.5rem 0;
 }
 #header img {
@@ -51,14 +60,91 @@ a:hover {
 .nav-item {
   text-decoration: none;
   color: white;
-  transition: 0.4s;
 }
 
-nav-item:not(.active):hover {
-  color: grey;
+.main.col h2 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 2rem;
 }
 
-.nav-item.active {
+.current-work .card-title {
+  color: black;
+}
+
+.see-more {
+  text-align: right;
+}
+
+.middle {
+  transition: 0.25s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle-container {
+  transition: 0.25s ease;
+  background-color: #000;
+  opacity: 0;
+  border-radius: inherit;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.current-work .card:hover img {
+  opacity: 0.75;
+}
+
+.card:hover .middle {
+  opacity: 1;
+}
+
+.card:hover .middle-container {
+  opacity: 0.75;
+}
+
+.text {
+  background-color: #3498DB;
+  color: white;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: 0.25s ease;
+}
+
+a:not(.active):hover {
+  color: #3498DB !important;
+}
+
+p.body-text {
+  text-align: justify;
+}
+
+#businessCard {
+  margin: auto;
+}
+#businessCard p {
+  color: black;
+}
+#businessCard p a {
+  text-decoration: none;
+  color: black !important;
+  transition: 0.25s;
+}
+#businessCard p a:hover {
+  color: #3498DB !important;
+}
+#businessCard .card-body {
+  padding: 1rem 0 0 1rem;
+}
+
+.nav-item.active,
+.nav-link.active {
   font-weight: 600;
   cursor: default;
 }
