@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/jobmap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Patricia Sittikul</title>
+
+
+    <script src="lib/raphael.js"></script>
+    <!-- <script src="scale.raphael.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="example/color.jquery.js"></script>
+    <script src="jquery.usmap.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var bananaYellow = 'rgba(255, 226, 38, 1)';
+            var bondiBlue = '#009FB7';
+            $('#map').usmap({
+                labelBackingStyles: {
+                    fill: '#ddd',
+                    'cursor': 'default'
+                },
+                labelBackingHoverStyles: {
+                    fill: '#ddd'
+                },
+                stateSpecificLabelBackingHoverStyles: {
+                    'DC': {
+                        fill: bondiBlue
+                    }
+                },
+                stateSpecificLabelBackingStyles: {
+                    'DC': {
+                        fill: bananaYellow
+                    }
+                },
+                labelTextStyles: {
+                    'font-family': 'Oswald'
+                },
+                'stateStyles': {
+                    fill: '#ddd',
+                    'stroke-width': .5
+                },
+                'stateHoverStyles': {
+                    fill: '#ddd'
+                },
+                'stateSpecificStyles': {
+                    'TX': {
+                        fill: bananaYellow
+                    },
+                    'GA': {
+                        fill: bananaYellow
+                    },
+                    'DC': {
+                        fill: bananaYellow
+                    },
+                    'NY': {
+                        fill: bananaYellow
+                    },
+                    'PA': {
+                        fill: bananaYellow
+                    },
+                    'NC': {
+                        fill: bananaYellow
+                    },
+                    'AK': {
+                        fill: 'none',
+                        'stroke-width': 0
+                    },
+                    'HI': {
+                        fill: 'none',
+                        'stroke-width': 0
+                    },
+                    'NY': {
+                        fill: bananaYellow
+                    }
+                },
+                'stateSpecificHoverStyles': {
+                    'DC': {
+                        fill: bondiBlue
+                    },
+                    'TX': {
+                        fill: bondiBlue
+                    },
+                    'GA': {
+                        fill: bondiBlue
+                    },
+                    'NY': {
+                        fill: bondiBlue
+                    },
+                    'NC': {
+                        fill: bondiBlue
+                    }
+                },
+                'stateHoverAnimation': 500,
+                'mouseoverState': {
+                    'HI': function(event, data) {
+                        //return false;
+                    }
+                },
+                'clickState': {
+                    'GA': function(event, data) {
+                        alert("State of Georgia was clicked!");
+                    }
+                },
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="map" style="width: 930px; height: 630px;"></div>
+
+</body>
+
+</html>

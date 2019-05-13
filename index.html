@@ -1,227 +1,145 @@
-<<<<<<< HEAD
 <!doctype html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <title>Blocks2D Short Talk</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
-
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-
-    </script>
-</head>
-
-<body>
-    <div class="reveal">
-        <div class="slides">
-            <section id="slide1" data-background="media/color-blur-vr-classroom-2.jpg">
-                <h2>Virtual Reality in Education</h2>
-                <p>Patricia Sittikul</p>
-                <p>CSE 280 Spring 2019</p>
-                <p>Blocks2D</p>
-            </section>
-            <section id="slide2" data-state="overview_slide">
-                <div class="slide-title">
-                    <h2>Overview</h2>
-                </div>
-                <div class="slide-content">
-                    <blockquote>"<span style="font-weight: bold">Virtual reality (VR)</span> is an interactive computer-generated experience taking place within a simulated environment, incorporating sensory feedback, mainly auditory and visual."</blockquote>
-                    <br>
-                    <div class="topic-block fragment fade-up" data-fragment-index="1">The Power of Virtual Reality</div>
-                    <div class="topic-block fragment fade-up" data-fragment-index="2">Virtual Reality as Educational Magic</div>
-                </div>
-                <div class="slide-footer">
-                    <p>Blocks2D</p>
-                </div>
-            </section>
-            <section id="slide3" data-state="vr_power_slide">
-                <div class="slide-title">
-                    <h2>The Power of Virtual Reality</h2>
-                </div>
-                <div class="slide-content">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="fragment fade-up" data-fragment-index="1">Accessible</td>
-                                <td class="fragment fade-up image-cell" data-fragment-index="2"><img src="media/steam-vr.PNG"></td>
-                            </tr>
-                            <tr>
-                                <td class="fragment fade-up" data-fragment-index="3">Immersive</td>
-                                <td class="fragment fade-up image-cell" data-fragment-index="4"><img src="media/pokemon_go_news_1.jpg"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="slide-footer">
-                    <p>Blocks2D</p>
-                </div>
-            </section>
-            <section id="slide4">
-                <h2>Imaginative</h2>
-            </section>
-            <section id="slide5" data-background-video="media/gameplay1.MOV" data-background-video-loop="true" data-background-video-muted="true">
-            </section>
-            <section id="slide6" data-state="vr_power_slide">
-                <div class="slide-title">
-                    <h2>Virtual Reality as Educational Magic</h2>
-                </div>
-                <div class="slide-content">
-                    <ul>
-                        <li class="fragment fade-up" data-fragment-index="1">Educational Magic Toy
-                            <span class="fragment fade-up word-def" data-fragment-index="2"> - toys featuring virtual objects (e.g. story animations, 3D objects)</span>
-                        </li>
-                        <li class="fragment fade-up" data-fragment-index="3">Enhanced imagination and creativity</li>
-                        <li class="fragment fade-up" data-fragment-index="4">Promising learning tool for children with learning delays</li>
-                    </ul>
-                </div>
-                <div class="slide-footer">
-                    <p>Blocks2D</p>
-                </div>
-            </section>
-            <section id="slide7">
-                <div class="slide-title">
-                    <h2>Questions?</h2>
-                </div>
-            </section>
-            <section id="slide8">
-                <div class="slide-title">
-                    <h2>References</h2>
-                </div>
-                <div class="slide-content">
-                    <ol>
-                        <li>Yilmaz, R. M. (2016). Educational magic toys developed with augmented reality technology for early childhood education. Computers in Human Behavior, 54, 240-248. doi:10.1016/j.chb.2015.07.040</li>
-                        <li>Greenwood, C., Carta, J., Kelley, E., Guerrero, G., Kong, N., Atwater, J. and Goldstein, H. (2016). Systematic Replication of the Effects of a Supplementary, Technology-Assisted, Storybook Intervention for Preschool Children with Weak Vocabulary and Comprehension Skills. The Elementary School Journal, 116(4), pp.574-599.</li>
-                    </ol>
-                </div>
-            </section>
-        </div>
-    </div>
-
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
-
-    <script>
-        // More info about config & dependencies:
-        // - https://github.com/hakimel/reveal.js#configuration
-        // - https://github.com/hakimel/reveal.js#dependencies
-        Reveal.initialize({
-            parallaxBackgroundImage: '',
-            parallaxBackgroundSize: '',
-            controls: false,
-            keyboard: true,
-            fragmentInURL: true,
-            dependencies: [{
-                    src: 'plugin/markdown/marked.js'
-                },
-                {
-                    src: 'plugin/markdown/markdown.js'
-                },
-                {
-                    src: 'plugin/notes/notes.js',
-                    async: true
-                },
-                {
-                    src: 'plugin/highlight/highlight.js',
-                    async: true,
-                    callback: function() {
-                        hljs.initHighlightingOnLoad();
-                    }
-                }
-            ]
-        });
-
-        //        Reveal.addEventListener('overview_slide', function() {
-        //            Reveal.addEventListener("fragmentshown", function(event) {
-        //                var fIndex = event.fragment.getAttribute("data-fragment-index");
-        //                console.log("Fragment has been shown: " + event.fragment.getAttribute("data-fragment-index"));
-        //                if (fIndex == 1) {
-        //                    $(".topic-block").eq(1).removeClass("fade-up");
-        //                    $(".topic-block").eq(1).addClass("shrink");
-        //                    $(".topic-block").eq(1).css("opacity", ".75");
-        //                    $(".topic-block").eq(1).data("fragment-index", 3);
-        //                }
-        //            });
-        //        }, false);
-        //        Reveal.addEventListener('vr_power_slide', function() {
-        //            Reveal.addEventListener("fragmentshown", function(event) {
-        //                var fIndex = event.fragment.getAttribute("data-fragment-index");
-        //                console.log("Fragment has been shown: " + event.fragment.getAttribute("data-fragment-index"));
-        //                if (fIndex == 1) {
-        //                    $(".topic-block").eq(1).removeClass("fade-up");
-        //                    $(".topic-block").eq(1).addClass("shrink");
-        //                    $(".topic-block").eq(1).data("fragment-index", 3);
-        //                }
-        //            });
-        //        }, false);
-
-    </script>
-=======
-<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial|Raleway">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="data/projects.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ps-styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Patricia Sittikul</title>
 </head>
 
 <body>
-    <div id="header">
-        <h1><a href="index.html" id="mainlink">PATRICIA SITTIKUL</a></h1>
-    </div>
-    <hr width="1200" align="left">
-    <div class="content-section">
-        <div id="self" style="text-align: center">
-            <img src="DSC_0181-min-small.jpg" style="width: 25%; box-shadow: 3px 3px lightgrey;" />
-        </div>
-        <p>Hi there! My name is Patricia Sittikul. I am a computer science student with a passion for doing good and helping others - and I firmly believe that love and compassion should drive the work I do. I feel most inspired and challenged by projects where I can apply my skills to help others, and try to approach all problems with this philosophy in mind. Most of my work experience is with small, non-profit organizations with limited budgets and resources, so I am experienced in conceiving creative, customized, and accommodating solutions. My main areas of interest are database design and administration, full-stack web development, and user experience design.
-            <br><br><br><br>
-            <a id="readmore" href="about.html#more" style="float: right;">More about me</a>
-        </p>
-    </div>
-    <div id="sidebar">
-        <div>
-            <a class="img" href="index.html">
-                <div class="circle">
-                    <div class="overlay">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg" id="header">
+            <h1>Patricia Sittikul</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr id="titleUnderline">
+        <div class="row">
+            <div class="main col">
+                <h2>Latest Work</h2>
+                <div class="card-deck current-work">
+                    <div class="card">
+                        <img src="images/autism-blogs.PNG" class="card-img-top">
+                        <div class="middle-container">
+                        </div>
+                        <div class="middle">
+                            <a class="website-link" data-pid="2">
+                                <div class="text">
+                                    Website
+                                </div>
+                            </a>
+                            <a class="details-link" data-pid="2">
+                                <div class="text">
+                                    Project Details
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">"PodPals" Photo Sharing Application</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Tags: JavaScript, PHP</small>
+                        </div>
                     </div>
-                    <img src="sacred-geometry-lotus-flower-by-Vexels.png" />
+                    <div class="card">
+                        <img src="images/myjobmap.PNG" class="card-img-top">
+                        <div class="middle-container">
+                        </div>
+                        <div class="middle">
+                            <a class="website-link" data-pid="0">
+                                <div class="text">
+                                    Website
+                                </div>
+                            </a>
+                            <a class="details-link" data-pid="0">
+                                <div class="text">
+                                    Project Details
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">My Job Map</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural lead-in.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Tags: JavaScript, PHP, data visualization</small>
+                        </div>
+                    </div>
+                    <div class="card" data-pid="2">
+                        <img src="images/autism-blogs.PNG" class="card-img-top" alt="Topicalizer Autism Blogs" />
+                        <div class="middle-container">
+                        </div>
+                        <div class="middle">
+                            <a class="website-link" data-pid="1">
+                                <div class="text">Website</div>
+                            </a>
+                            <a class="details-link" data-pid="1">
+                                <div class="text">Project Details</div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Topicalizer Autism Blogs Visualizer</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural lead-in.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Tags: JavaScript, D3.js, data visualization</small>
+                        </div>
+                    </div>
                 </div>
-            </a>
+                <br>
+                <p class="see-more"><a href="portfolio.html">See all work <i class="fas fa-angle-double-right"></i></a></p>
+            </div>
         </div>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <!--            <li><a href="resume.html">RESUME</a></li>-->
-            <li><a href="work.html">WORK</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+        <div id="footer">
+            <hr id="pageUnderline">
+            <p>&copy; Patricia Sittikul 2019
+            </p>
+        </div>
     </div>
-    <div id="footer">
-        <hr width="1200" align="left">
-        <span style="font-size: x-small; float:left;"><a href="https://www.vexels.com/vectors/preview/138662/sacred-geometry-lotus-flower"> Sacred geometry lotus flower </a> designed by Vexels</span>
-    </div>
->>>>>>> 222a3856b6e3fc8543bb7bc53f4c90e1a3b726b9
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $.each($(".website-link"), function() {
+            var pid = $(this).data("pid");
+            var url = projects[pid]['website'];
+            $(this).attr("href", url);
+            $(this).attr("target", "_blank");
+        });
+        $.each($(".details-link"), function() {
+            var pid = $(this).data("pid");
+            var url = "portfolio.html#" + projects[pid]['hash'];
+            $(this).attr("href", url);
+            $(this).attr("target", "_blank");
+        });
+
+    </script>
 </body>
 
 </html>
