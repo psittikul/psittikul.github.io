@@ -1,0 +1,17 @@
+body {
+    background: #222;
+    font-family: $body-font;
+    color: white;
+  }
+
+  a {
+      transition: 0.25s;
+      color: white;
+      &:visited {
+          color: white;
+      }
+      &:hover {
+          color: $sunflower;
+          text-decoration: none;
+      }
+  }

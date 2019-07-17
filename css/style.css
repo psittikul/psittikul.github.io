@@ -1,0 +1,53 @@
+body {
+  background: #222;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+a {
+  transition: 0.25s;
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #E8DE2A;
+  text-decoration: none;
+}
+
+#header {
+  padding-top: 1rem;
+  border-bottom: solid thin white;
+}
+#header img {
+  width: 4rem;
+  margin: auto;
+}
+#header h1 {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+#header .my-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  transition: 0.25s;
+}
+
+#topNav {
+  background-color: #222;
+  font-family: inherit;
+  padding: 0;
+}
+#topNav .nav-link {
+  text-transform: uppercase;
+  font-size: x-large;
+}
+#topNav ul {
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
