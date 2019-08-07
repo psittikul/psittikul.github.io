@@ -27,6 +27,8 @@ body {
 
 #topNavContainer {
   border-bottom: solid thin white;
+  width: 80%;
+  margin: auto;
 }
 
 #topNav ul {
@@ -56,6 +58,7 @@ body {
 
 #footer hr {
   border-top: solid thin white;
+  width: 80%;
 }
 
 #sliderSec {
@@ -95,7 +98,7 @@ body {
 }
 
 #latestWorkSlider {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
