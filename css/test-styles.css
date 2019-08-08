@@ -27,7 +27,6 @@ body {
 
 #topNavContainer {
   border-bottom: solid thin white;
-  width: 80%;
   margin: auto;
 }
 
@@ -58,7 +57,6 @@ body {
 
 #footer hr {
   border-top: solid thin white;
-  width: 80%;
 }
 
 #sliderSec {
@@ -134,4 +132,54 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: auto;
     border-bottom: solid thin white;
+}
+
+.imgCard {
+  position: relative; 
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  /* animation: float 6s ease-in-out infinite; */
+}
+.imgCard img {
+  width: 100%;
+}
+
+.imgCardOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  transition: .25s;
+}
+
+#gridSec {
+  width: 95%;
+  margin: auto;
+}
+
+#gridSec .col-4 {
+  padding: .5rem;
+}
+
+.col-4 .imgCard:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+/* .imgCard:hover .imgCardOverlay {
+  background: linear-gradient(to top, rgba(192, 109, 132, 0.85), rgba(108, 91, 123, .85), rgba(53, 92, 125, .85));
+} */
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-6px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
