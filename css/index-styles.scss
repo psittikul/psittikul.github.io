@@ -1,0 +1,241 @@
+@import "variables";
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #222 !important;
+  color: white;
+}
+
+#logo {
+  width: 2.5rem;
+  margin: auto;
+}
+
+#headerTitle a {
+  color: white;
+  transition: 0.25s;
+}
+
+#headerTitle h1 {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+
+#headerTitle a:hover {
+  text-decoration: none;
+}
+
+#topNavContainer {
+  border-bottom: solid thin white;
+  margin: auto;
+}
+
+#topNav ul {
+  font-family: "Raleway", sans-serif;
+  margin: auto;
+}
+
+#topNav .nav-item.active a {
+  color: #e8d82a;
+}
+
+#topNav .nav-item a {
+  color: white;
+  transition: 0.25s;
+}
+
+#topNavContainer a:not(.active):hover {
+  color: #e8d82a;
+}
+
+#footer {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: smaller;
+}
+
+#footer hr {
+  border-top: solid thin white;
+}
+
+#sliderSec {
+  margin: auto;
+  width: 100%;
+}
+
+#latestWorkSlider .carousel-item {
+  height: 25rem;
+}
+
+.caption-overlay {
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 0 1rem 0 1rem;
+  color: white;
+  bottom: 0;
+}
+
+.caption-overlay button {
+  float: right;
+  margin-bottom: 1rem;
+  background: #e8d82a;
+  border: none;
+  color: black;
+  margin-right: 0.5rem;
+  transition: 0.25s;
+}
+
+.work-link:hover {
+  opacity: 0.6;
+}
+
+.caption-overlay h4 {
+  margin-top: 1rem;
+}
+
+#latestWorkSlider {
+  width: 100%;
+  margin: auto;
+}
+
+.slide-dots {
+  text-align: center;
+  line-height: 1;
+  width: 100%;
+}
+
+.slide-dot-btn {
+  border: none;
+  background: none;
+  color: white;
+  font-size: xx-large;
+  transition: 0.25s;
+}
+
+.slide-dot-btn:focus {
+  outline: none;
+}
+
+.slide-dot-btn:hover {
+  color: #e8d82a;
+}
+
+#title {
+  width: 100%;
+  padding: 1rem 2rem 1rem 2rem;
+  color: white;
+}
+
+#title h3 {
+  font-family: "Raleway", sans-serif;
+  margin: auto;
+  border-bottom: solid thin white;
+}
+
+.imgCard {
+  position: relative;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  /* animation: float 6s ease-in-out infinite; */
+}
+.imgCard img {
+  width: 100%;
+}
+
+.imgCardOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  transition: 0.25s;
+}
+
+#gridSec {
+  width: 80%;
+  margin: auto;
+  .col-sm {
+    padding: 0;
+  }
+}
+
+#gridSec .col-4 {
+  padding: 0.5rem;
+}
+
+.col-4 .imgCard:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-family: $body-font;
+    div {
+      position: relative;
+      width: 100%;
+      padding-left: 1rem;
+      &.project-header {
+        margin-top: 1rem;
+        h3 {
+          text-decoration: underline;
+          transition: 0.25s;
+          margin-bottom: 0;
+        }
+        p.subtitle {
+          font-style: italic;
+          font-size: medium;
+        }
+      }
+      &.project-footer {
+        bottom: 0;
+        position: absolute;
+        background-color: $sunflower-yellow;
+        height: 0%;
+        display: flex;
+        transition: 0.25s;
+        overflow: hidden;
+        a {
+            margin-top: auto;
+            margin-bottom: auto;
+            &:not(:last-of-type) {
+                margin-right: 1rem;
+            }
+        }
+        button {
+          background-color: #222;
+          color: white;
+          padding: 0.5rem;
+          border-radius: 0.45rem;
+          margin-top: auto;
+          margin-bottom: auto;
+          transition: 0.25s;
+          border: none;
+          &:hover {
+            background-color: #808284;
+          }
+          &:not(:last-of-type) {
+              margin-right: 1rem;
+          }
+        }
+      }
+    }
+    &:hover > .project-footer {
+        height: 20%;
+    }
+  }
+}

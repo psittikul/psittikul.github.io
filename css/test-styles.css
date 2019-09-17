@@ -166,20 +166,7 @@ body {
 .col-4 .imgCard:not(:last-of-type) {
   margin-bottom: 1rem;
 }
-/* .imgCard:hover .imgCardOverlay {
-  background: linear-gradient(to top, rgba(192, 109, 132, 0.85), rgba(108, 91, 123, .85), rgba(53, 92, 125, .85));
-} */
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-6px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
+
+.project-card {
+  position: relative;
 }
