@@ -280,7 +280,6 @@ body {
   background: rgba(0, 0, 0, 0.75);
   color: white;
   font-family: "Raleway", sans-serif;
-  overflow: scroll;
 }
 .project-card .card-overlay div {
   position: relative;
