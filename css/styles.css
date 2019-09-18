@@ -20,6 +20,7 @@ label, body {
 #myInfo {
   margin-right: 0;
   margin-left: 0;
+  margin-bottom: 2rem;
 }
 #myInfo p {
   text-align: justify;
@@ -33,6 +34,13 @@ label, body {
   background-image: url("../DSC_0181-min-small.jpg");
   border-radius: 50%;
   background-size: cover;
+}
+
+#languageCharts {
+  position: relative;
+  max-height: 500px;
+  max-width: 500px;
+  margin: auto;
 }
 
 #contactInfo {
