@@ -55,6 +55,35 @@ label, body {
   display: inline-block;
 }
 
+/* Stylesheet for different sizes/media queries */
+#topNav {
+  text-align: center;
+}
+#topNav .navbar-toggler {
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .card-overlay {
+    overflow: scroll;
+  }
+  .card-overlay p {
+    margin-bottom: 0;
+    font-size: small;
+  }
+  .card-overlay h3 {
+    font-size: large;
+  }
+  .card-overlay:hover > .project-footer {
+    height: 30% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  #headshot .image-circle {
+    width: 10rem;
+    height: 10rem;
+  }
+}
 body {
   background-color: #222 !important;
 }
@@ -80,13 +109,16 @@ body {
   text-decoration: none;
 }
 
-#topNavContainer {
-  border-bottom: solid thin white;
+#topNav {
+  background-color: inherit !important;
+}
+#topNav ul {
+  font-family: "Raleway", sans-serif;
   margin: auto;
 }
 
-#topNav ul {
-  font-family: "Raleway", sans-serif;
+#topNavContainer {
+  border-bottom: solid thin white;
   margin: auto;
 }
 
@@ -240,6 +272,7 @@ body {
   background: rgba(0, 0, 0, 0.75);
   color: white;
   font-family: "Raleway", sans-serif;
+  overflow: scroll;
 }
 .project-card .card-overlay div {
   position: relative;

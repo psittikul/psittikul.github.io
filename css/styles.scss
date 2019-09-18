@@ -2,11 +2,13 @@
 @import "about";
 @import "contact";
 @import "portfolio";
+@import "mediaqueries";
 
 body {
   background-color: #222 !important;
   @extend %body-text;
 }
+
 
 p,
 h1,
@@ -38,13 +40,16 @@ label {
   text-decoration: none;
 }
 
-#topNavContainer {
-  border-bottom: solid thin white;
-  margin: auto;
+#topNav {
+  background-color: inherit !important;
+  ul {
+    font-family: $body-font;
+    margin: auto;
+  }
 }
 
-#topNav ul {
-  font-family: "Raleway", sans-serif;
+#topNavContainer {
+  border-bottom: solid thin white;
   margin: auto;
 }
 
@@ -196,6 +201,7 @@ label {
     background: rgba(0, 0, 0, 0.75);
     color: white;
     font-family: $body-font;
+    overflow: scroll;
     div {
       position: relative;
       width: 100%;
