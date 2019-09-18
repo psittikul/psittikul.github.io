@@ -1,0 +1,9 @@
+#contactInfo {
+    text-align: center;
+    list-style: none;
+    font-size: large;
+    padding: 1rem;
+    a {
+        @extend %link-styles;
+    }
+}

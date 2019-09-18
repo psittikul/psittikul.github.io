@@ -6,58 +6,95 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
     <script src="data/projects.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/ps-styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Patricia Sittikul</title>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg" id="header">
-            <h1><a href="index.html">Patricia Sittikul</a></h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Me</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
-                    </li>
-                </ul>
+    <div class="container-fluid">
+        <div id="topNavContainer">
+            <div class="row" id="headerTitle">
+                <img id="logo" src="images/logo_white.png" />
+                <h1><a href="index.html">PATRICIA SITTIKUL</a></h1>
             </div>
-        </nav>
-        <hr id="titleUnderline">
-        <div class="row">
-            <div class="main col">
-                <h2>Portfolio</h2>
-                <div class="portfolio content">
-                    COMING SOON
+            <nav class="navbar navbar-expand-lg" id="topNav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation" style="color: white">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT ME</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="contentSec">
+            <h3 id="pageTitle">PORTFOLIO</h3>
+            <div class="row" id="menuRow">
+                <div class="col-sm">
+                    <label for="orderBy">Order By:</label>
+                    <select id="orderBy" name="order_by">
+                        <option>Date</option>
+                        <option>Name</option>
+                    </select>
+                    <label style="margin-right: .25rem;">ASC</label>
+                    <div class="custom-control custom-switch" style="display: inline-block">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1"></label>
+                    </div>
+                    <label style="margin-left: -.5rem">DESC</label>
+                </div>
+                <div class="col-sm">
+                    <label>Categories:</label>
+                    <div class="category-tag">
+                        <p>Web</p>
+                    </div>
+                    <div class="category-tag">
+                        <p>Mobile</p>
+                    </div>
+                    <div class="category-tag">
+                        <p>Art & Design</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="footer">
-            <hr id="pageUnderline">
-            <p>&copy; Patricia Sittikul 2019
-            </p>
+            <div id="portfolioSec">
+                <h3>COMING SOON</h3>
+            </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-
-
-    </script>
+    <div id="footer">
+        <hr id="pageUnderline">
+        <p>&copy; Patricia Sittikul 2019</p>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

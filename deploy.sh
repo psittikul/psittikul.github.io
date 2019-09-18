@@ -1,1 +1,1 @@
-sass css/index-styles.scss css/index-styles.css
+sass css/styles.scss css/styles.css

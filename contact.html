@@ -1,48 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <script src="https://use.fontawesome.com/54320e5990.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial|Raleway">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="data/projects.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Patricia Sittikul</title>
 </head>
 
 <body>
-    <div id="header">
-        <h1><a href="index.html" id="mainlink">PATRICIA SITTIKUL</a></h1>
-    </div>
-    <hr width="1200" align="left">
-    <div class="content-section">
-        <p>
-            <i class="fa fa-envelope"></i> : patricia.sitt@gmail.com<br>
-            <i class="fa fa-phone"></i> &nbsp;: (484) 212-5334
-        </p>
-    </div>
-    <div id="sidebar">
-        <div>
-            <a class="img" href="index.html">
-                <div class="circle">
-                    <div class="overlay">
-                    </div>
-                    <img src="sacred-geometry-lotus-flower-by-Vexels.png" />
+    <div class="container-fluid">
+        <div id="topNavContainer">
+            <div class="row" id="headerTitle">
+                <img id="logo" src="images/logo_white.png" />
+                <h1><a href="index.html">PATRICIA SITTIKUL</a></h1>
+            </div>
+            <nav class="navbar navbar-expand-lg" id="topNav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation" style="color: white">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT ME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#">CONTACT</a>
+                        </li>
+                    </ul>
                 </div>
-            </a>
+            </nav>
         </div>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <!--            <li><a href="resume.html">RESUME</a></li>-->
-            <li><a href="work.html">WORK</a></li>
-            <li><a href="#" style="font-size: larger; color: lightgrey">CONTACT</a></li>
-        </ul>
+        <div id="contentSec">
+            <h3 id="pageTitle">CONTACT</h3>
+            <ul id="contactInfo">
+                <li><i class="far fa-envelope"></i> : patricia.sitt@gmail.com</li>
+                <li><i class="fas fa-phone"></i> : (856) 278-2892</li>
+                <li><a href="https://github.com/psittikul" target="_blank"><i class="fab fa-github"></i> :
+                        https://github.com/psittikul</a></li>
+            </ul>
+        </div>
     </div>
     <div id="footer">
-        <hr width="1200" align="left">
-        <span style="font-size: x-small; float:left;"><a href="https://www.vexels.com/vectors/preview/138662/sacred-geometry-lotus-flower"> Sacred geometry lotus flower </a> designed by Vexels</span>
+        <hr id="pageUnderline">
+        <p>&copy; Patricia Sittikul 2019</p>
     </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

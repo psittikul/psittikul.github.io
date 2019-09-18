@@ -1,0 +1,19 @@
+#myInfo {
+    margin-right: 0;
+    margin-left: 0;
+    p {
+        text-align: justify;
+    }
+    #headshot {
+        margin: auto;
+    }
+    .image-circle {
+        width: 12rem;
+        height: 12rem;
+        background-image: url("../DSC_0181-min-small.jpg");
+        border-radius: 50%;
+        background-size: cover;
+    }
+
+}
+
