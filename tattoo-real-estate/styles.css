@@ -1,0 +1,59 @@
+body {
+  font-family: "Odibee Sans", cursive;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+#tattoosTable {
+  margin: 2rem auto;
+  border: solid thin white;
+  border-collapse: collapse;
+}
+#tattoosTable th,
+#tattoosTable td {
+  border: solid thin white;
+  padding: 0.5rem;
+}
+#tattoosTable tr#blankRow {
+  display: none;
+}
+#tattoosTable td#addRowCell {
+  border: solid thin black;
+}
+#tattoosTable td.remove-row-cell {
+  border: solid thin black;
+  border-right: solid thin white;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.25s;
+  font-family: inherit;
+  font-size: large;
+  background-color: white;
+  border: none;
+}
+button:hover {
+  background-color: #e8d82a;
+}
+button#calculateBtn {
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+}
+button#addRowBtn, button.remove-row-btn {
+  background: none;
+  opacity: 0.36;
+  color: white;
+}
+button#addRowBtn:hover, button.remove-row-btn:hover {
+  color: #e8d82a;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=styles.css.map */

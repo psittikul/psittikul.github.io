@@ -1,0 +1,60 @@
+@import "variables.scss";
+
+body {
+  font-family: "Odibee Sans", cursive;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+#tattoosTable {
+  margin: 2rem auto;
+  border: solid thin white;
+  border-collapse: collapse;
+  th,
+  td {
+    border: solid thin white;
+    padding: 0.5rem;
+  }
+  tr#blankRow {
+    display: none;
+  }
+  td#addRowCell {
+      border: solid thin black;
+  }
+  td.remove-row-cell {
+      border: solid thin black;
+      border-right: solid thin white;
+  }
+}
+
+button {
+  cursor: pointer;
+  transition: 0.25s;
+  font-family: inherit;
+  font-size: large;
+  background-color: white;
+  border: none;
+  &:hover {
+    background-color: $sunflower;
+  }
+  &#calculateBtn {
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+  }
+  &#addRowBtn, 
+  &.remove-row-btn {
+    background: none;
+    opacity: .36;
+    color: white;
+    &:hover {
+      color: $sunflower;
+      opacity: 1;
+    }
+  }
+}

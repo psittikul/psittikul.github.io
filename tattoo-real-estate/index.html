@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tattoo Real Estate</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Odibee+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <form id="calculatorForm">
+        <label>Height: </label>
+        <input type="number" id="heightFt" name="height_feet" required>
+        <label for="heightFt"> ft.</label>
+        <input type="number" id="heightIn" name="height_inches" required>
+        <label for="heightIn"> in.</label>
+        <label style="margin-left: 2rem" for="weight">Weight: </label>
+        <input type="number" id="weight" name="weight_lbs" required>
+        <label> lbs.</label>
+        <table id="tattoosTable">
+            <thead>
+                <th style="border: solid thin black; border-right:solid thin white"></th>
+                <th>Tattoo #</th>
+                <th>Date</th>
+                <th>Height (in)</th>
+                <th>Width (in)</th>
+                <th>Area (in²)</th>
+                <th>Location</th>
+                <th>What</th>
+                <th style="display:none">add</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="remove-row-cell"><button title="Remove this row" type="button" class="remove-row-btn"><i class="fas fa-minus-circle"></i></button></td>
+                    <td class="tattoo_number">1</td>
+                    <td class="tattoo_date"><input type="date" name="tattoo_1_date"></td>
+                    <td class="tattoo_height"><input type="number" name="tattoo_1_height"></td>
+                    <td class="tattoo_width"><input type="number" name="tattoo_1_width"></td>
+                    <td class="tattoo_area"><input type="number" name="tattoo_1_area" readonly></td>
+                    <td class="tattoo_location"><input type="text" name="tattoo_1_location"></td>
+                    <td class="tattoo_desc"><input type="text" name="tattoo_1_desc"></td>
+                    <td id="addRowCell"><button title="Add another tattoo" type="button" id="addRowBtn"><i class="fas fa-plus-circle"></i></button></td>
+                </tr>
+                <tr id="blankRow">
+                    <td class="remove-row-cell"><button title="Remove this row" type="button" class="remove-row-btn"><i class="fas fa-minus-circle"></i></button></td>
+                    <td class="tattoo_number"></td>
+                    <td class="tattoo_date"><input type="date"></td>
+                    <td class="tattoo_height"><input type="number"></td>
+                    <td class="tattoo_width"><input type="number"></td>
+                    <td class="tattoo_area" readonly><input type="number"></td>
+                    <td class="tattoo_location"><input type="text"></td>
+                    <td class="tattoo_desc"><input type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" id="calculateBtn">CALCULATE</button>
+    </form>
+    <div id="resultsSec">
+    <h2 style="display:none">Skin surface area is approximately: <span id="skinSurfaceArea"></span></h2>
+    <h2 style="display:none">The total surface area of all your tattoos is approximately: <span id="tattooSurfaceArea"></span></h2>
+    <h2 style="display:none">Approximately <span id="tattooPercentage"></span>% of your skin is covered in tattoos</h2>
+    </div>
+</body>
+
+</html>
