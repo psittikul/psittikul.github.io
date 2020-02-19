@@ -1,12 +1,16 @@
 #myInfo {
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: 2rem;
+
     p {
         text-align: justify;
     }
+
     #headshot {
         margin: auto;
     }
+
     .image-circle {
         width: 12rem;
         height: 12rem;
@@ -14,6 +18,10 @@
         border-radius: 50%;
         background-size: cover;
     }
-
 }
-
+#languageCharts {
+    position: relative;
+    max-height: 500px;
+    max-width: 500px;
+    margin: auto;
+}

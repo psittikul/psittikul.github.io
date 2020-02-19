@@ -1,0 +1,36 @@
+/* Stylesheet for different sizes/media queries */
+#topNav {
+    text-align: center;
+
+    .navbar-toggler {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .card-overlay {
+        overflow: scroll;
+
+        p {
+            margin-bottom: 0;
+            font-size: small;
+        }
+
+        h3 {
+            font-size: large;
+        }
+
+        &:hover>.project-footer {
+            height: 30% !important;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    #headshot {
+        .image-circle {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+}
