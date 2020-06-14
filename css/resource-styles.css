@@ -1,15 +1,31 @@
 body {
   background: black !important;
-  font-family: "Raleway", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+#pageTitle {
+  color: white;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
 }
 
 #resourceMenu {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 #resourceMenu .menu-option.link {
-  font-family: "Raleway", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25rem;
   color: white;
   text-decoration: none;
+  transition: 0.25s;
+}
+#resourceMenu .menu-option.link:hover {
+  color: #e8d82a;
+}
+#resourceMenu .menu-option.link li {
+  border-bottom: dotted;
 }
 
 /*# sourceMappingURL=resource-styles.css.map */
