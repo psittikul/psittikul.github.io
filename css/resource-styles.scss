@@ -1,5 +1,14 @@
 @import "variables";
 body {
-    background: black;
+    background: black !important;
     font-family: 'Raleway', sans-serif;
+}
+
+#resourceMenu {
+    list-style: none;
+    .menu-option.link {
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        text-decoration: none;
+    }
 }
