@@ -8,6 +8,7 @@ body {
   text-align: center;
   font-family: "Oswald", sans-serif;
   border-bottom: solid white;
+  margin: 0;
 }
 
 #resourceMenu {
@@ -27,7 +28,7 @@ body {
   color: #e8d82a;
 }
 #resourceMenu .menu-option.link li {
-  border-bottom: dotted;
+  border-bottom: dotted thin;
 }
 
 /*# sourceMappingURL=resource-styles.css.map */
