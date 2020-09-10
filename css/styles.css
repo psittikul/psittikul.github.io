@@ -17,13 +17,34 @@ label, body {
   color: #e8d82a;
 }
 
+#aboutMeCard {
+  background: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  width: 70%;
+  border-radius: 0.25rem;
+  margin-bottom: 6rem;
+  box-shadow: 0px 10px 16px 10px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
 #myInfo {
   margin-right: 0;
   margin-left: 0;
-  margin-bottom: 2rem;
+  margin: auto;
+  padding: 1rem 0;
+}
+#myInfo .text-wrapper {
+  overflow: hidden;
+}
+#myInfo .text-wrapper * {
+  transform: translateY(120%);
+}
+#myInfo .p-wrapper * {
+  transform: translateY(-120%);
 }
 #myInfo p {
   text-align: justify;
+  color: #222;
 }
 #myInfo #headshot {
   margin: auto;
@@ -31,9 +52,11 @@ label, body {
 #myInfo .image-circle {
   width: 12rem;
   height: 12rem;
-  background-image: url("../DSC_0181-min-small.jpg");
+  background-image: url("../me.jpg");
   border-radius: 50%;
   background-size: cover;
+  margin: auto;
+  opacity: 0;
 }
 
 #languageCharts {
@@ -41,6 +64,54 @@ label, body {
   max-height: 500px;
   max-width: 500px;
   margin: auto;
+  margin-bottom: 6rem;
+}
+
+#funFactsRow {
+  margin: auto;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+#funFactsRow .col-sm-3 {
+  opacity: 0;
+}
+#funFactsRow .col-sm-3:not(:last-of-type) {
+  border-right: dotted 2px #e8d82a;
+}
+#funFactsRow .col-sm-3 ul {
+  color: #222;
+  padding-left: 2rem;
+}
+#funFactsRow .col-sm-3 ul:last-of-type {
+  padding-right: 1rem;
+}
+#funFactsRow .col-sm-3 h4 {
+  font-family: "Raleway", sans-serif;
+  background: #e8d82a;
+  padding: 0.5rem;
+}
+
+#quotesHeader {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+#quotesContainer {
+  width: 70%;
+  margin: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: -3.5rem;
+}
+#quotesContainer #quotesSec {
+  padding: 5rem 1rem 1rem 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25rem;
+  box-shadow: 0px 10px 16px 10px rgba(0, 0, 0, 0.6);
+}
+#quotesContainer #quotesSec p {
+  color: #222;
 }
 
 #contactInfo {
@@ -61,6 +132,28 @@ label, body {
 
 .category-tag {
   display: inline-block;
+}
+
+.row#bookshelf {
+  margin: 0;
+}
+.row#bookshelf #flipbook .page-wrapper {
+  background-size: cover;
+}
+.row#bookshelf #flipbook .page-wrapper:first-of-type {
+  background-image: linear-gradient(to top, rgba(236, 56, 188, 0.6), rgba(115, 3, 192, 0.6), rgba(3, 0, 30, 0.8)), url(../images/linc-website-full.jpg);
+}
+.row#bookshelf #flipbook .page-wrapper:not(:first-of-type) {
+  background: white;
+}
+.row#bookshelf #flipbook .page h3 {
+  font-size: 1.5rem;
+  color: #222;
+  padding: 0.5rem;
+  background: #e8d82a;
+  margin-top: 50%;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* Stylesheet for different sizes/media queries */
@@ -92,8 +185,114 @@ label, body {
     height: 10rem;
   }
 }
+.loaded #headerTitle {
+  animation: fadeIn 1s ease-in 0.2s forwards;
+}
+.loaded #topNav {
+  animation: scaleIn 0.75s ease-in 0.2s forwards;
+}
+.loaded #topNav ul {
+  animation: slideIn 0.65s ease-in 0.8s forwards;
+}
+.loaded #aboutRow {
+  animation: fadeIn 1.25s ease-in 0.25s forwards;
+}
+.loaded #aboutRow div.typewriter {
+  animation: fadeIn 0.75s ease-in 1.6s forwards;
+}
+.loaded #aboutRow p {
+  animation: fadeIn 0.75s ease-in 1.25s forwards;
+}
+.loaded #aboutRow p.read-more {
+  animation: typing 3.5s steps(40, end) 1.25s, blink-caret 0.75s step-end 2s infinite;
+}
+.loaded .ribbon {
+  animation: scaleIn 0.75s ease-in 2.75s forwards;
+}
+.loaded .ribbon .ribbon-content {
+  animation: fadeIn 0.75s ease-in 3.5s forwards;
+}
+.loaded #latestWorkCarousel {
+  animation: fadeIn 0.75s ease-in 3s forwards;
+}
+.loaded #pageTitle {
+  animation: fadeIn 1.2s ease-in 0.2s forwards;
+}
+.loaded #aboutMeCard {
+  animation: fadeIn 1.2s ease-in 0.4s forwards;
+}
+.loaded #aboutMeCard .image-circle {
+  animation: fadeIn 0.5s ease-in 1.6s forwards;
+}
+.loaded #aboutMeCard p {
+  animation: slideIn 1.2s cubic-bezier(0.54, 0.46, 0.54, 0.94) 2s forwards;
+}
+.loaded #aboutMeCard #funFactsRow .col-sm-3:first-of-type {
+  animation: fadeIn 1s ease-in 2.5s forwards;
+}
+.loaded #aboutMeCard #funFactsRow .col-sm-3:nth-of-type(2) {
+  animation: fadeIn 1s ease-in 3.1s forwards;
+}
+.loaded #aboutMeCard #funFactsRow .col-sm-3:nth-of-type(3) {
+  animation: fadeIn 1s ease-in 3.7s forwards;
+}
+.loaded #aboutMeCard #funFactsRow .col-sm-3:nth-of-type(4) {
+  animation: fadeIn 1s ease-in 4.3s forwards;
+}
+
+@keyframes scaleIn {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes fadeIn {
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes float {
+  60% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #e8d82a;
+  }
+}
 body {
   background-color: #222 !important;
+}
+body a {
+  transition: 0.25s;
+}
+body a:hover {
+  color: #222;
+  text-decoration: dotted underline;
 }
 
 #logo {
@@ -103,6 +302,7 @@ body {
 
 #headerTitle {
   text-align: center;
+  opacity: 0;
 }
 #headerTitle a {
   color: white;
@@ -126,12 +326,14 @@ body {
 }
 
 #topNav {
+  transform: scaleX(0);
   background-color: #e8d82a !important;
   padding: 0;
   margin-top: 1rem;
 }
 #topNav ul {
   font-family: "Raleway", sans-serif;
+  transform: translateY(-30px);
   font-weight: bold;
   margin: auto;
 }
@@ -159,10 +361,11 @@ body {
 }
 
 #aboutRow {
-  width: 60%;
+  width: 70%;
   margin: auto;
   margin-bottom: 6rem;
   text-align: center;
+  opacity: 0;
 }
 #aboutRow #imgSec {
   background: url(../me.jpg);
@@ -185,14 +388,62 @@ body {
   box-shadow: 2px 10px 10px 6px rgba(0, 0, 0, 0.6);
 }
 #aboutRow #aboutSec p {
+  opacity: 0;
   font-size: 1.25rem;
   padding-left: 4rem;
   color: #222;
   text-align: justify;
 }
+#aboutRow #aboutSec div.typewriter {
+  width: fit-content;
+  float: right;
+  opacity: 0;
+}
+#aboutRow #aboutSec div.typewriter a {
+  color: inherit;
+}
+#aboutRow #aboutSec div.typewriter a:hover {
+  color: inherit;
+  text-decoration: underline dotted;
+}
 #aboutRow #aboutSec p.read-more {
+  opacity: 1;
   text-align: right;
+  font-family: "Raleway", sans-serif;
   font-size: medium;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #e8d82a;
+  /* The typewriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+}
+#aboutRow #seeLatestWork {
+  background: #e8d82a;
+  display: inline-block;
+  width: 80%;
+  margin-left: 4rem;
+  padding: 0.5rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+#aboutRow #seeLatestWork:after {
+  width: 0;
+  height: 0;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 50px solid #e8d82a;
+}
+#aboutRow #seeLatestWork p {
+  color: #222;
+  font-size: 1.25rem;
+  margin: 0;
+  opacity: 0;
 }
 
 h2.section-title {
@@ -222,6 +473,7 @@ span.emphasis {
 
 .ribbon {
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  transform: scaleX(0);
   width: 70%;
   position: relative;
   background: #e8d82a;
@@ -229,6 +481,9 @@ span.emphasis {
   text-align: center;
   margin: auto;
   margin-bottom: 3rem;
+}
+.ribbon .ribbon-content {
+  opacity: 0;
 }
 
 .ribbon:before,
@@ -292,6 +547,22 @@ span.emphasis {
 }
 .cosmic-gradient.overlay p {
   margin: 0;
+}
+
+#latestWorkCarousel {
+  opacity: 0;
+  width: 70%;
+  margin: auto;
+}
+#latestWorkCarousel.out-of-focus {
+  filter: blur(0.25rem);
+}
+#latestWorkCarousel .carousel-caption {
+  background: rgba(0, 0, 0, 0.8);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 #portfolioBtn {
@@ -510,9 +781,9 @@ span.emphasis {
 #pageTitle {
   text-align: center;
   margin: 1rem;
-  text-decoration: underline;
   color: white;
   font-family: "Raleway", sans-serif;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

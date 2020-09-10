@@ -1,10 +1,38 @@
+#contentSec.about-content .row {
+    // width: 100%;
+    // margin-bottom: 6rem;
+}
+#aboutMeCard {
+    background: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    width: 70%;
+    border-radius: 0.25rem;
+    margin-bottom: 6rem;
+    box-shadow: 0px 10px 16px 10px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+
 #myInfo {
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 2rem;
-
+    // margin-bottom: 2rem;
+    margin: auto;
+    padding: 1rem 0;
+    // padding: 0 10%;
+    // width: 80%;
+    // background: rgba(255, 255, 255, 0.8);
+    .text-wrapper {
+        overflow: hidden;
+    }
+    .text-wrapper * {
+        transform: translateY(120%);
+    }
+    .p-wrapper * {
+        transform: translateY(-120%);
+    }
     p {
         text-align: justify;
+        color: #222;
     }
 
     #headshot {
@@ -14,9 +42,11 @@
     .image-circle {
         width: 12rem;
         height: 12rem;
-        background-image: url("../DSC_0181-min-small.jpg");
+        background-image: url("../me.jpg");
         border-radius: 50%;
         background-size: cover;
+        margin: auto;
+        opacity: 0;
     }
 }
 #languageCharts {
@@ -24,4 +54,59 @@
     max-height: 500px;
     max-width: 500px;
     margin: auto;
+    margin-bottom: 6rem;
+}
+
+#funFactsRow {
+    // width: 80%;
+    margin: auto;
+    border: {
+        bottom-left-radius: 0.25rem;
+        bottom-right-radius: 0.25rem;
+    }
+    .col-sm-3 {
+        opacity: 0;
+        &:not(:last-of-type) {
+            border-right: dotted 2px $sunflower-yellow;
+        }
+        ul {
+            color: #222;
+            padding-left: 2rem;
+            &:last-of-type {
+                padding-right: 1rem;
+            }
+        }
+        h4 {
+            font-family: $body-font;
+            background: $sunflower-yellow;
+            padding: 0.5rem;
+        }
+    }
+}
+
+#quotesHeader {
+    margin: {
+        left: auto;
+        right: auto;
+        bottom: 0;
+    }
+}
+
+#quotesContainer {
+    width: 70%;
+    margin: auto;
+    padding: {
+        left: 2em;
+        right: 2em;
+    }
+    margin-top: -3.5rem;
+    #quotesSec {
+        padding: 5rem 1rem 1rem 1rem;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 0.25rem;
+        box-shadow: 0px 10px 16px 10px rgba(0, 0, 0, 0.6);
+        p {
+            color: #222;
+        }
+    }
 }

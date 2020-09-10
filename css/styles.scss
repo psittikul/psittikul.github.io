@@ -3,10 +3,18 @@
 @import "contact";
 @import "portfolio";
 @import "mediaqueries";
+@import "animations";
 
 body {
   background-color: #222 !important;
   @extend %body-text;
+  a {
+    transition: 0.25s;
+    &:hover {
+      color: #222;
+      text-decoration: dotted underline;
+    }
+  }
 }
 
 p,
@@ -25,6 +33,8 @@ label {
 
 #headerTitle {
   text-align: center;
+  // transform: translateY(-500px);
+  opacity: 0;
   a {
     color: white;
     transition: 0.25s;
@@ -48,12 +58,14 @@ label {
 }
 
 #topNav {
-  // background-color: inherit !important;
+  transform: scaleX(0); // Start off at 0 scale prior to animation
   background-color: $sunflower-yellow !important;
   padding: 0;
   margin-top: 1rem;
   ul {
     font-family: $body-font;
+    transform: translateY(-30px); // Hide this at first so it can be animated to slide in later
+    // opacity: 0;
     font-weight: bold;
     margin: auto;
   }
@@ -86,10 +98,12 @@ label {
 }
 
 #aboutRow {
-  width: 60%;
+  width: 70%;
   margin: auto;
   margin-bottom: 6rem;
   text-align: center;
+  // transform: scaleX(0);
+  opacity: 0;
   #imgSec {
     background: url(../me.jpg);
     background-size: cover;
@@ -102,14 +116,37 @@ label {
   }
   #aboutSec {
     p {
+      // transform: translateY(-500px);
+      opacity: 0;
       font-size: 1.25rem;
       padding-left: 4rem;
       color: #222;
       text-align: justify;
     }
+    div.typewriter {
+      width: fit-content;
+      float: right;
+      opacity: 0;
+      a {
+        color: inherit;
+        &:hover {
+          color: inherit;
+          text-decoration: underline dotted;
+        }
+      }
+    }
     p.read-more {
+      opacity: 1;
       text-align: right;
+      font-family: $body-font;
       font-size: medium;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: 0.15em solid $sunflower-yellow; /* The typewriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      margin: 0 auto;
+      // float: right;
+      // width: fit-content;
     }
     margin-left: 4rem;
     margin-top: 2rem;
@@ -117,8 +154,38 @@ label {
     display: inline-block;
     width: 80%;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 0.25rem;
+    // border-top-left-radius: 0.25rem;
+    // border-top-right-radius: 0.25rem;
+    border: {
+      radius: 0.25rem;
+    }
     box-shadow: 2px 10px 10px 6px rgba(0, 0, 0, 0.6);
+  }
+  #seeLatestWork {
+    background: $sunflower-yellow;
+    display: inline-block;
+    width: 80%;
+    margin-left: 4rem;
+    padding: 0.5rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    &:after {
+      width: 0;
+      height: 0;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-top: 50px solid $sunflower-yellow;
+    }
+    p {
+      color: #222;
+      font-size: 1.25rem;
+      margin: 0;
+      opacity: 0;
+    }
   }
 }
 
@@ -153,7 +220,7 @@ span.emphasis {
 .ribbon {
   // font-size: 16px !important;
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-
+  transform: scaleX(0);
   width: 70%;
   position: relative;
   background: $sunflower-yellow;
@@ -161,6 +228,9 @@ span.emphasis {
   text-align: center;
   margin: auto;
   margin-bottom: 3rem;
+  .ribbon-content {
+    opacity: 0;
+  }
 }
 .ribbon:before,
 .ribbon:after {
@@ -218,6 +288,23 @@ span.emphasis {
     p {
       margin: 0;
     }
+  }
+}
+
+#latestWorkCarousel {
+  opacity: 0;
+  width: 70%;
+  margin: auto;
+  &.out-of-focus {
+    filter: blur(0.25rem);
+    // opacity: 0.6;
+  }
+  .carousel-caption {
+    background: rgba(0,0,0,.8);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
 }
 
@@ -446,7 +533,8 @@ span.emphasis {
 #pageTitle {
   text-align: center;
   margin: 1rem;
-  text-decoration: underline;
+  // text-decoration: underline;
   color: white;
   font-family: $body-font;
+  opacity: 0;
 }

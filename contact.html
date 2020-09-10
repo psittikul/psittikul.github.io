@@ -32,11 +32,12 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding: 0;">
         <div id="topNavContainer">
-            <div class="row" id="headerTitle">
-                <img id="logo" src="images/logo_white.png" />
-                <h1><a href="index.html">PATRICIA SITTIKUL</a></h1>
+            <div id="headerTitle">
+                <a href="index.html"><img id="logo" src="images/logo_white.png" /></a>
+                <h1><a class="active" href="index.html">PATRICIA SITTIKUL</a></h1>
+                <p id="jobTitle">WEB DEVELOPER</p>
             </div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="topNav">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -49,14 +50,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">HOME</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT ME</a>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#">ABOUT ME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link active" href="#">CONTACT</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -74,17 +75,18 @@
     </div>
     <div id="footer">
         <hr id="pageUnderline">
-        <p>&copy; Patricia Sittikul 2019</p>
+        <p>&copy; Patricia Sittikul 2020</p>
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

@@ -32,11 +32,12 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding: 0">
         <div id="topNavContainer">
-            <div class="row" id="headerTitle">
-                <img id="logo" src="images/logo_white.png" />
-                <h1><a href="index.html">PATRICIA SITTIKUL</a></h1>
+            <div id="headerTitle">
+                <a href="index.html"><img id="logo" src="images/logo_white.png" /></a>
+                <h1><a class="active" href="index.html">PATRICIA SITTIKUL</a></h1>
+                <p id="jobTitle">WEB DEVELOPER</p>
             </div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="topNav">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -62,46 +63,138 @@
                 </div>
             </nav>
         </div>
-        <div id="contentSec">
-            <h3 id="pageTitle">ABOUT ME</h3>
-            <div class="row" id="myInfo">
-                <div class="col-2-sm" id="headshot">
-                    <div class="image-circle"></div>
-                    <!-- <img src="DSC_0181-min-small.jpg" alt="Headshot of Patricia Sittikul"> -->
+        <div id="contentSec" class="about-content">
+            <h2 id="pageTitle">ABOUT ME</h2>
+            <div id="aboutMeCard">
+                <div class="row" id="myInfo">
+                    <div class="col-sm-3" id="headshot">
+                        <div class="image-circle"></div>
+
+                    </div>
+                    <div class="col-sm-9" id="bio">
+                        <div class="text-wrapper">
+                            <p><span class="emphasis">Hi! I'm Patricia Sittikul.</span></p>
+                        </div>
+                        <div class="text-wrapper p-wrapper">
+                            <p>I'm a web developer with a passion for doing good and helping others - and I
+                                strongly believe that love and compassion should drive the work I do. I feel most
+                                inspired
+                                and
+                                challenged
+                                by projects where I can apply my skills to help others, and try to approach all problems
+                                with
+                                this philosophy in mind. Most of my work experience is with small, often non-profit
+                                organizations with limited budgets and/or resources, so I am adept in conceiving
+                                creative,
+                                customized, and accommodating solutions. My main areas of interest are full-stack
+                                development,
+                                user experience, and human computer interaction.</p>
+                        </div>
+                        <div class="text-wrapper p-wrapper">
+                            <p>In my spare time I like to make web apps that
+                                use art to create a fun, imaginative experience. My other hobbies include Muay Thai,
+                                video
+                                games, sewing, digital illustration, and playing with my two cats.</p>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col-sm" id="bio">
-                    <p>I am a software developer with a passion for doing good and helping others - and I strongly
-                        believe that love and compassion should drive the work I do. I feel most inspired and challenged
-                        by projects where I can apply my skills to help others, and try to approach all problems with
-                        this philosophy in mind. Most of my work experience is with small, often non-profit
-                        organizations with limited budgets and/or resources, so I am adept in conceiving creative,
-                        customized, and accommodating solutions. My main areas of interest are full-stack development,
-                        user experience, and human computer interaction.</p>
-                    <p>In my spare time I like to make web apps that
-                        use art to create a fun, imaginative experience. My other hobbies include Muay Thai, video
-                        games, digital illustration, and playing with my two cats.</p>
+                <div class="row no-gutters" id="funFactsRow">
+                    <div class="col-sm-3">
+                        <h4>Also Known As:</h4>
+                        <ul>
+                            <li>
+                                Young Firebrand
+                            </li>
+                            <li>
+                                Tech Goddess
+                            </li>
+                            <li>
+                                Wearer of Many Hats
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Favorite Projects:</h4>
+                        <ul>
+                            <li>Topicalizer Data Visualization</li>
+                            <li>LINC Resource Web App & Database</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Likes:</h4>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>People</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Disikes:</h4>
+                        <ul>
+                            <li>Jokes disparaging JavaScript & PHP for no good reason</li>
+                            <li>Bugs (no pun intended)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div id="languageCharts">
                 <canvas id="languagePiechart" width="440" height="360"></canvas>
             </div>
-
+            <h2 class="ribbon" id="quotesHeader">
+                <strong class="ribbon-content">QUOTES I LOVE</strong>
+            </h2>
+            <div class="row" id="quotesContainer">
+                <div id="quotesSec">
+                    <p class="quote">You have to act as if it were possible to radically transform the world, and you
+                        have
+                        to do
+                        it all the time.</p>
+                    <p class="source">–Angela Davis</p>
+                    <p class="quote">
+                        The tremendous world I have inside my head. But how to free myself and free it without being
+                        torn to
+                        pieces. And a thousand times rather be torn to pieces than rather it in me or bury it.
+                    </p>
+                    <p class="source">–Franz Kafka</p>
+                    <p class="quote">
+                        Love every leaf, every ray of light. Love the animals, love the plants, love each separate
+                        thing. If
+                        thou love each thing thou wilt perceive the mystery of God in all; and when once thou perceive
+                        this,
+                        thou wilt thenceforward grow every day to a fuller understanding of it: until thou come at last
+                        to
+                        love
+                        the whole world with a love that will then be all-embracing and universal.
+                    </p>
+                    <p class="source">
+                        –Fyodor Dostoevsky, The Brothers Karamazov
+                    </p>
+                    <p class="quote">
+                        Seize the struggle.
+                    </p>
+                    <p class="source">
+                        –Dr. Mark Erle, Lehigh University CSE Professor
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <div id="footer">
         <hr id="pageUnderline">
-        <p>&copy; Patricia Sittikul 2019</p>
+        <p>&copy; Patricia Sittikul 2020</p>
     </div>
     </div>
     <script type="text/javascript" src="js/charts.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

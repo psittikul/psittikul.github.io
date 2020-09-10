@@ -1,12 +1,44 @@
 #menuRow {
     background-color: #808284;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     display: none;
 }
 #orderBy {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 }
 
 .category-tag {
     display: inline-block;
+}
+
+.row#bookshelf {
+    margin: 0;
+    #flipbook {
+        .page-wrapper {
+            background-size: cover;
+            &:first-of-type {
+                background-image: linear-gradient(
+                        to top,
+                        rgba(236, 56, 188, 0.6),
+                        rgba(115, 3, 192, 0.6),
+                        rgba(3, 0, 30, 0.8)
+                    ),
+                    url(../images/linc-website-full.jpg);
+            }
+            &:not(:first-of-type) {
+                background: white;
+            }
+        }
+        .page {
+            h3 {
+                font-size: 1.5rem;
+                color: #222;
+                padding: 0.5rem;
+                background: $sunflower-yellow;
+                margin-top: 50%;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
 }

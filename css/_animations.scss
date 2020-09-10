@@ -1,0 +1,112 @@
+.loaded {
+    #headerTitle {
+        // animation: slideIn 1s ease-in forwards;
+        animation: fadeIn 1s ease-in 0.2s forwards;
+    }
+    #topNav {
+        animation: scaleIn 0.75s ease-in 0.2s forwards;
+        ul {
+            animation: slideIn 0.65s ease-in 0.8s forwards;
+        }
+    }
+    #aboutRow {
+        // animation: scaleIn 0.75s ease-in 0.2s forwards;
+        animation: fadeIn 1.25s ease-in 0.25s forwards;
+        div.typewriter {
+            animation: fadeIn 0.75s ease-in 1.6s forwards;
+        }
+        p {
+            animation: fadeIn 0.75s ease-in 1.25s forwards;
+            &.read-more {
+                animation: typing 3.5s steps(40, end) 1.25s, blink-caret 0.75s step-end 2s infinite;
+            }
+        }
+        // #seeLatestWork:after {
+        //     animation: float 2s ease-in-out 2.5s infinite;
+        // }
+    }
+    .ribbon {
+        animation: scaleIn 0.75s ease-in 2.75s forwards;
+        .ribbon-content {
+            animation: fadeIn 0.75s ease-in 3.5s forwards;
+        }
+    }
+    #latestWorkCarousel {
+        animation: fadeIn 0.75s ease-in 3s forwards;
+    }
+    #pageTitle {
+        animation: fadeIn 1.2s ease-in 0.2s forwards;
+    }
+    #aboutMeCard {
+        animation: fadeIn 1.2s ease-in 0.4s forwards;
+        .image-circle {
+            animation: fadeIn 0.5s ease-in 1.6s forwards;
+        }
+        p {
+            animation: slideIn 1.2s cubic-bezier(0.54, 0.46, 0.54, 0.94) 2s forwards;
+        }
+        #funFactsRow .col-sm-3:first-of-type {
+            animation: fadeIn 1s ease-in 2.5s forwards;
+        }
+        #funFactsRow .col-sm-3:nth-of-type(2) {
+            animation: fadeIn 1s ease-in 3.1s forwards;
+        }
+        #funFactsRow .col-sm-3:nth-of-type(3) {
+            animation: fadeIn 1s ease-in 3.7s forwards;
+        }
+        #funFactsRow .col-sm-3:nth-of-type(4) {
+            animation: fadeIn 1s ease-in 4.3s forwards;
+        }
+    }
+}
+
+@keyframes scaleIn {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fadeIn {
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    60% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: $sunflower-yellow;
+    }
+}
