@@ -1,9 +1,10 @@
-$title-font: 'Oswald',
-sans-serif;
-$body-font: 'Raleway',
-sans-serif;
+$title-font: "Oswald", sans-serif;
+$body-font: "Raleway", sans-serif;
+$serif-font: "Domine", serif;
 $background-color: #222;
 $sunflower-yellow: #e8d82a;
+$orchid: #83449C;
+$eminence: #6b3880;
 
 %body-text {
     color: white;
@@ -11,7 +12,7 @@ $sunflower-yellow: #e8d82a;
 }
 %link-styles {
     color: white;
-    transition: .25s;
+    transition: 0.25s;
     &:hover {
         text-decoration: none;
         color: $sunflower-yellow;

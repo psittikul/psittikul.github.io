@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
     <script src="data/projects.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -33,12 +34,12 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding: 0;">
         <div id="topNavContainer">
-            <div class="row" id="headerTitle">
+            <div id="headerTitle">
                 <img id="logo" src="images/logo_white.png" />
                 <h1><a class="active" href="#">PATRICIA SITTIKUL</a></h1>
-                <small>SOFTWARE DEVELOPER</small>
+                <p id="jobTitle">WEB DEVELOPER</p>
             </div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="topNav">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -55,10 +56,7 @@
                             <a class="nav-link" href="about.html">ABOUT ME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">WORK</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="resume.html">RESUME</a>
+                            <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">CONTACT</a>
@@ -68,6 +66,51 @@
             </nav>
         </div>
         <div id="contentSec">
+            <div id="aboutRow">
+                <div id="imgSec">
+                </div>
+                <div id="aboutSec">
+                    <p><span class="emphasis">Hi! I'm Patricia Sittikul.</span>
+                        <br /> I'm a web developer with a passion for doing good and helping
+                        others – and I strongly believe that love and compassion should drive the work I do.
+                    </p>
+                    <p class="read-more">More About Me...</p>
+                </div>
+            </div>
+            <!-- <h2 class="section-title">LATEST WORK</h2> -->
+            <h2 class="ribbon">
+                <strong class="ribbon-content">LATEST WORK</strong>
+            </h2>
+            <div class="row" id="latestWorkRow">
+                <div class="col-md-5" id="lincPortal">
+                    <img src="gif/linc-website.gif" alt="GIF of LINC website being navigated">
+                    <!-- <img src="images/linc-website.PNG" alt="Screenshot of front page of LINC website"> -->
+                    <div class="project-info cosmic-gradient overlay">
+                        <h3 class="project-title">LINC PORTAL & WEBSITE</h3>
+                        <p class="project-description">
+                            Client portal for LINC, a Lehigh Valley non-profit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="gif/topicalizer_t.gif" alt="GIF of Lehigh University DAS Lab topicalizer tool being used">
+                    <div class="project-info cosmic-gradient overlay">
+                        <h3 class="project-title">TOPICALIZER DATA VISUALIZATION TOOL</h3>
+                        <p class="project-description">
+                            A data visualization tool representing the topics present in a large body of
+                            related
+                            texts, as well as the coherence of each topic.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="portfolio.html"> <button type="button" id="portfolioBtn">
+                    <img src="images/knowledge.png">
+                    <p>SEE FULL PORTFOLIO</p>
+                </button>
+            </a>
+
+
             <!-- <h3 id="pageTitle">LATEST WORK</h3>
             <div id="gridSec">
                 <div class="row no-gutters">
@@ -164,7 +207,7 @@
     </div>
     <div id="footer">
         <hr id="pageUnderline">
-        <p>&copy; Patricia Sittikul 2019</p>
+        <p>&copy; Patricia Sittikul 2020</p>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

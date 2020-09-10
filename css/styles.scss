@@ -9,7 +9,6 @@ body {
   @extend %body-text;
 }
 
-
 p,
 h1,
 h2,
@@ -24,9 +23,12 @@ label {
   margin: auto;
 }
 
-#headerTitle a {
-  color: white;
-  transition: 0.25s;
+#headerTitle {
+  text-align: center;
+  a {
+    color: white;
+    transition: 0.25s;
+  }
 }
 
 #headerTitle h1 {
@@ -36,35 +38,217 @@ label {
   margin: 1rem 0 0 0;
 }
 
+#jobTitle {
+  margin: auto;
+  margin-bottom: 0;
+}
+
 #headerTitle a:hover {
   text-decoration: none;
 }
 
 #topNav {
-  background-color: inherit !important;
+  // background-color: inherit !important;
+  background-color: $sunflower-yellow !important;
+  padding: 0;
+  margin-top: 1rem;
   ul {
     font-family: $body-font;
+    font-weight: bold;
     margin: auto;
   }
 }
 
 #topNavContainer {
-  border-bottom: solid thin white;
+  // border-bottom: solid thin white;
   margin: auto;
+  padding: 0;
 }
 
 #topNav .nav-item.active a {
-  color: #e8d82a;
+  // color: #e8d82a;
+  text-decoration: underline dotted;
 }
 
 #topNav .nav-item a {
-  color: white;
+  // color: white;
+  color: #222;
   transition: 0.25s;
 }
 
 #topNavContainer a:not(.active):hover {
-  color: #e8d82a;
+  // color: #e8d82a;
+  text-decoration: underline dotted;
 }
+
+#contentSec {
+  padding-top: 2rem;
+}
+
+#aboutRow {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 6rem;
+  text-align: center;
+  #imgSec {
+    background: url(../me.jpg);
+    background-size: cover;
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px 6px rgba(0, 0, 0, 0.6);
+    position: absolute;
+  }
+  #aboutSec {
+    p {
+      font-size: 1.25rem;
+      padding-left: 4rem;
+      color: #222;
+      text-align: justify;
+    }
+    p.read-more {
+      text-align: right;
+      font-size: medium;
+    }
+    margin-left: 4rem;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0.25rem;
+    box-shadow: 2px 10px 10px 6px rgba(0, 0, 0, 0.6);
+  }
+}
+
+h2.section-title {
+  font-weight: bold;
+  color: $sunflower-yellow;
+  text-align: center;
+}
+
+span.emphasis {
+  // font-weight: bold;
+  font-size: x-large;
+  // color: $orchid;
+}
+
+#latestWorkRow {
+  // display: flex;
+  margin: 0;
+  .col-md-5 {
+    margin: auto;
+    margin-top: 1rem;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 0.25rem;
+    padding: 0;
+    img {
+      width: 100%;
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+.ribbon {
+  // font-size: 16px !important;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+  width: 70%;
+  position: relative;
+  background: $sunflower-yellow;
+  color: #222;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -0.5em;
+  border: 0.5em solid $sunflower-yellow;
+  z-index: -1;
+}
+.ribbon:before {
+  left: -1em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+.ribbon:after {
+  right: -1em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #c2b522 transparent transparent transparent;
+  bottom: -0.5em;
+}
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 0.5em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 0.5em 1em 0 0;
+}
+
+.cosmic-gradient {
+  background: #03001e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom #fdeff9, #ec38bc, #7303c0, #03001e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, rgba(236, 56, 188, 0.8), rgba(115, 3, 192, 0.8), rgba(3, 0, 30, 0.8));
+  // background-image: linear-gradient(to top, rgba(236, 56, 188, 0.6), rgba(115, 3, 192, 0.6), rgba(3, 0, 30, 0.8)),
+  // url(../gif/linc-website.gif);
+  // height: 20rem;
+  &.overlay {
+    position: absolute;
+    width: 100%;
+    height: 33%;
+    bottom: 0;
+    z-index: 1;
+    padding: 1rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+#portfolioBtn {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  text-align: center;
+  background: $sunflower-yellow;
+  margin: auto;
+  border: none;
+  margin-top: 2rem;
+  display: block;
+  img {
+    width: 60%;
+  }
+  p {
+    color: #222;
+    font-weight: bold;
+  }
+}
+
+// .cosmic-gradient {
+//   background: #ff00cc; /* fallback for old browsers */
+//   background: -webkit-linear-gradient(to right, #333399, #ff00cc); /* Chrome 10-25, Safari 5.1-6 */
+//   background: linear-gradient(
+//     to right,
+//     #333399,
+//     #ff00cc
+//   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// }
 
 #footer {
   font-family: "Raleway", sans-serif;
@@ -266,4 +450,3 @@ label {
   color: white;
   font-family: $body-font;
 }
-
