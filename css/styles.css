@@ -137,16 +137,16 @@ label, body {
 .row#bookshelf {
   margin: 0;
 }
-.row#bookshelf #flipbook .page-wrapper {
+.row#bookshelf #book-zoom .page-wrapper {
   background-size: cover;
 }
-.row#bookshelf #flipbook .page-wrapper:first-of-type {
-  background-image: linear-gradient(to top, rgba(236, 56, 188, 0.6), rgba(115, 3, 192, 0.6), rgba(3, 0, 30, 0.8)), url(../images/linc-website-full.jpg);
+.row#bookshelf #book-zoom .page-wrapper:first-of-type {
+  background-image: linear-gradient(to bottom, rgba(195, 20, 50, 0.7), rgba(36, 11, 54, 0.7)), url(../../../../images/linc-website-full.jpg) !important;
 }
-.row#bookshelf #flipbook .page-wrapper:not(:first-of-type) {
+.row#bookshelf #book-zoom .page-wrapper:not(:first-of-type) {
   background: white;
 }
-.row#bookshelf #flipbook .page h3 {
+.row#bookshelf #book-zoom .page h3 {
   font-size: 1.5rem;
   color: #222;
   padding: 0.5rem;

@@ -13,17 +13,20 @@
 
 .row#bookshelf {
     margin: 0;
-    #flipbook {
+    #book-zoom {
         .page-wrapper {
             background-size: cover;
             &:first-of-type {
-                background-image: linear-gradient(
-                        to top,
-                        rgba(236, 56, 188, 0.6),
-                        rgba(115, 3, 192, 0.6),
-                        rgba(3, 0, 30, 0.8)
-                    ),
-                    url(../images/linc-website-full.jpg);
+                // background-image: linear-gradient(
+                //         to top,
+                //         rgba(236, 56, 188, 0.6),
+                //         rgba(115, 3, 192, 0.6),
+                //         rgba(3, 0, 30, 0.8)
+                //     ),
+                //     url(../images/linc-website-full.jpg);
+                // background-image: url(../turnjs4/samples/steve-jobs/pics/gradient-page-left.jpg);
+                background-image: linear-gradient(to bottom, rgba(195, 20, 50, 0.7), rgba(36, 11, 54, 0.7)),
+                    url(../../../../images/linc-website-full.jpg) !important;
             }
             &:not(:first-of-type) {
                 background: white;

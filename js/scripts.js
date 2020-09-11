@@ -25,9 +25,9 @@ $(function () {
             $("#latestWorkCarousel").addClass("out-of-focus");
         }
     });
-    $("#flipbook").turn({
-        width: 400,
-        height: 300,
-        autoCenter: true
-    });
+    // $("#flipbook").turn({
+    //     width: 1000,
+    //     height: 1100
+    //     // autoCenter: true
+    // });
 });
