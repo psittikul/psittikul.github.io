@@ -247,10 +247,10 @@ $('#canvas').css({ visibility: 'hidden' });
 
 // Load turn.js
 
-yepnope({
-    test: Modernizr.csstransforms,
-    yep: ['../turnjs4/lib/turn.min.js'],
-    nope: ['../turnjs4/lib/turn.html4.min.js', '../turnjs4/samples/steve-jobs/css/jquery.ui.html4.css', '../turnjs4/samples/steve-jobs/css/steve-jobs-html4.css'],
-    // both: ['js/steve-jobs.js', 'css/jquery.ui.css', 'css/steve-jobs.css'],
-    complete: loadApp
-});
+// yepnope({
+//     test: Modernizr.csstransforms,
+//     yep: ['../turnjs4/lib/turn.min.js'],
+//     nope: ['../turnjs4/lib/turn.html4.min.js', '../turnjs4/samples/steve-jobs/css/jquery.ui.html4.css', '../turnjs4/samples/steve-jobs/css/steve-jobs-html4.css'],
+//     // both: ['js/steve-jobs.js', 'css/jquery.ui.css', 'css/steve-jobs.css'],
+//     complete: loadApp
+// });

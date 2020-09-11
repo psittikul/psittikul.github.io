@@ -25,9 +25,15 @@ $(function () {
             $("#latestWorkCarousel").addClass("out-of-focus");
         }
     });
-    // $("#flipbook").turn({
-    //     width: 1000,
-    //     height: 1100
-    //     // autoCenter: true
-    // });
+    $("#flipbook").turn({
+        width: 1200,
+        height: 720,
+        autoCenter: true,
+        // pages:6,
+        gradients:true
+    });
+    $("#flipbook").bind("turning", function(event, page, view) {
+        console.log("Turning page to: " + page);
+        console.log("Visible pages: " + view);
+      });
 });
