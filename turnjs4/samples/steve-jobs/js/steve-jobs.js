@@ -1,7 +1,6 @@
 /* Steve jobs' book */
 
 function updateDepth(book, newPage) {
-
 	var page = book.turn('page'),
 		pages = book.turn('pages'),
 		depthWidth = 16*Math.min(1, page*2/pages);
@@ -19,12 +18,12 @@ function updateDepth(book, newPage) {
 		depthWidth = 16*Math.min(1, (pages-page)*2/pages);
 
 	if (newPage<pages-3)
-		$('.sj-book .p111 .depth').css({
+		$('.sj-book .p7 .depth').css({
 			width: depthWidth,
 			right: 20 - depthWidth
 		});
 	else
-		$('.sj-book .p111 .depth').css({width: 0});
+		$('.sj-book .p7 .depth').css({width: 0});
 
 }
 

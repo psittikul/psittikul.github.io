@@ -60,6 +60,14 @@
     }
 }
 
+.project-title {
+    animation: scaleIn 0.75s ease-in 0.2s forwards;
+}
+
+#book-zoom {
+    animation: fadeIn 1s ease-in .5s forwards;
+}
+
 @keyframes scaleIn {
     100% {
         transform: scaleX(1);
