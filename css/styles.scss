@@ -299,6 +299,10 @@ span.emphasis {
     filter: blur(0.25rem);
     // opacity: 0.6;
   }
+  .carousel-item {
+    height: 30rem;
+    overflow: hidden;
+  }
   .carousel-caption {
     background: rgba(0,0,0,.8);
     right: 0;

@@ -71,6 +71,11 @@
                 </div>
             </nav>
         </div>
+        <p id="navigationTip">
+            You can flip through the portfolio by clicking the page corners or by using the arrow keys on your keyboard.
+            <br>
+            <!-- <a href="#">View PDF</a> -->
+        </p>
         <div id="canvas">
             <div id="book-zoom" style="margin:auto;">
                 <div class="sj-book">
@@ -84,13 +89,51 @@
                         <div class="book-content">
                             <h4 class="section-header">TABLE OF CONTENTS</h4>
                             <ul id="tableOfContents">
-                                <li>
-                                    <a href="#page/4">
-                                        PROFESSIONAL PROJECTS
-                                    </a>
-                                    <ul>
+                                <li class="project-category">
+                                    <h5 class="category-title">PROFESSIONAL PROJECTS</h5>
+                                    <ul class="subcontents">
                                         <a href="#page/5">
-                                            <li>LINC Portal</li>
+                                            <li>LINC Portal <i>LINC</i></li>
+                                        </a>
+                                        <a href="#page/7">
+                                            <li>LINC Resource Web App & Database <i>LINC</i></li>
+                                        </a>
+                                        <a href="#page/9">
+                                            <li>LINC Website <i>LINC</i></li>
+                                        </a>
+                                        <a href="#page/11">
+                                            <li>Scripture for Success Website <i>Freelance</i></li>
+                                        </a>
+                                    </ul>
+                                </li>
+                                <li class="project-category">
+                                    <h5 class="category-title">RESEARCH PROJECTS</h5>
+                                    <ul class="subcontents">
+                                        <a href="#page/13">
+                                            <li>Topicalizer Data Visualization <i>Lehigh University</i></li>
+                                        </a>
+                                        <a href="#page/15">
+                                            <li>PodPals User Experience Study <i>Lehigh University</i></li>
+                                        </a>
+                                    </ul>
+                                </li>
+                                <li class="project-category">
+                                    <h5 class="category-title">PERSONAL PROJECTS</h5>
+                                    <ul class="subcontents">
+                                        <a href="#page/17">
+                                            <li>VIBEREF "Mood Board"</li>
+                                        </a>
+                                        <a href="#page/19">
+                                            <li>My Job Map</li>
+                                        </a>
+                                        <a href="#page/21">
+                                            <li>Tarot Tracker</li>
+                                        </a>
+                                        <a href="#page/23">
+                                            <li>Tattoo Real Estate</li>
+                                        </a>
+                                        <a href="#page/25">
+                                            <li>Quarantine Keeper</li>
                                         </a>
                                     </ul>
                                 </li>
@@ -98,11 +141,6 @@
                         </div>
                     </div>
                     <div class="even p4">
-                        <div class="book-content">
-                            <h4 class="category-title">PROFESSIONAL PROJECTS</h4>
-                        </div>
-                    </div>
-                    <div class="odd p5">
                         <h4 class="project-title">LINC Portal</h4>
                         <div class="book-content">
                             <div class="row project-header">
@@ -138,46 +176,103 @@
                                         <li>Git CLI</li>
                                         <li>PHP</li>
                                         <li>JavaScript</li>
-                                        <li>PostGreSQL</li>
+                                        <li>SQL</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="even p6">
-                        <h4 class="project-title">LINC Portal (cont.)</h4>
+                    <div class="odd p5">
+                        <h4 class="project-title">LINC Portal</h4>
                         <div class="book-content">
-                            <h5 class="project-subheading">PURPOSE</h5>
-                            <p>
-                                The purpose of this project is to...
-                            </p>
                             <h5 class="project-subheading">AUDIENCE</h5>
-                            <p>Newly relocated hires transitioning to the Lehigh Valley; HR and recruiting contacts from
-                                local employers such as
-                                Air Products, Lutron, St. Luke's; board and advisory council members; community partner
-                                sponsors</p>
+                            <ul>
+                                <li>
+                                    Newly relocated hires transitioning to the Lehigh Valley
+                                </li>
+                                <li>
+                                    HR representatives and recruiters from local member companies
+                                </li>
+                            </ul>
+                            <h5 class="project-subheading">BACKGROUND</h5>
+                            <p>
+                                The LINC Portal has two sides: an employer side for member companies, and a client
+                                side for newly relocated hires.</p>
+                            <p>
+                                On the employer side, contacts from member companies can refer new hires for LINC
+                                services, using the online referral form. All referral form submissions are stored in
+                                the WordPress database, allowing for easy, ongoing reporting on metrics such as cost and
+                                services utilized.</p>
+                            <p>
+                                On the client side, new hires referred by member companies can access the resources and
+                                information necessary for a smooth transition to their new home.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="even p6">
+                        <h4 class="project-title">LINC Resource Web App & Database</h4>
+                        <div class="book-content">
+                            <div class="row project-header">
+                                <p>This is a web app that functions as both a database for community resources as well
+                                    as a tool to curate and format resources specific to each client's needs.</p>
+                                <div class="project-img-sec">
+                                    <img src="images/linc-website.PNG">
+                                </div>
+                            </div>
+                            <div class="project-details row">
+                                <div class="col-sm-6">
+                                    <h5>SCOPE</h5>
+                                    <ul class="scope-list">
+                                        <li>UX design</li>
+                                        <li>Server setup and maintenance</li>
+                                        <li>Database design and administration</li>
+                                        <li>User training</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>TECHNOLOGIES USED</h5>
+                                    <ul class="tech-list">
+                                        <li>Azure Web Services</li>
+                                        <li>Git CLI</li>
+                                        <li>PHP</li>
+                                        <li>JavaScript</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h5 class="project-subheading">AUDIENCE</h5>
+                            <ul>
+                                <li>LINC client coordinators and volunteers</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="odd p7">
                         <h4 class="project-title">LINC Resource Web App & Database</h4>
                         <div class="book-content">
-                            <div class="row project-header">
-                                <p>This is a web app that functions both as a database for community resources, as well
-                                    as a templating tool to format collected resources for clients.</p>
-                                <div class="project-img-sec">
-                                    <img src="images/linc-website.PNG">
-                                </div>
-                            </div>
-                            <h5 class="project-subheading">PURPOSE</h5>
+                            <h5 class="project-subheading">BACKGROUND</h5>
                             <p>
-                                The purpose of this project is to...
+                                I first conceived this web app upon seeing a crucial need that had been hindering LINC's
+                                efficiency since its founding: providing community resources to clients is at the heart
+                                of LINC services, but without a database or consistent formatting tool, LINC client
+                                coordinators relied on storing information in various spreadsheets and presenting
+                                deliverables to clients in confusingly-formatted text documents. This lack of necessary
+                                tools resulted in an exorbitant amount of hours spent searching for and often recreating
+                                existing content.
                             </p>
-                            <h5 class="project-subheading">AUDIENCE</h5>
-                            <p>LINC client coordinators and volunteers</p>
+                            <p>
+                                The design of the underlying database required acute examination and
+                                attention to detail. Being one of two employees who have been with LINC since its founding, I
+                            </p>
+                            <p>
+                                As LINC client coordinators have a great deal of tacit knowledge regarding their work
+                                and are accustomed to carrying out their operations without the use of such
+                                technological tools, an iterative design process was necessary to ensure an intuitive
+                                and efficient user experience.
+                            </p>
                         </div>
                     </div>
                     <div class="even p8">
-                        Page 6
+
                     </div>
                     <div depth="5" class="hard odd back-side p9">
                         Back inside cover?
@@ -192,7 +287,9 @@
                 <div id="slider"></div>
             </div>
         </div>
-        <a href="https://www.freepik.com/photos/background">Background photo created by xamtiw - www.freepik.com</a>
+        <p>
+            <a href="https://www.freepik.com/photos/background">Background photo created by xamtiw - www.freepik.com</a>
+        </p>
     </div>
     <div id="footer">
         <hr id="pageUnderline">
