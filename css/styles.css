@@ -432,11 +432,8 @@ body#portfolioBody p#navigationTip {
 }
 
 .sj-book .p1 {
-  background-position: 0 0;
   /* background-image: url(../pics/gradient-page-left.jpg); */
-  background-image: url(../images/textures/4014.jpg) !important;
   /* background-image: url(../../../../images/linc-website-full.jpg) !important; */
-  background-size: cover !important;
 }
 
 .sj-book .page img {
