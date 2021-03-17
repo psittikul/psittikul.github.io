@@ -84,7 +84,7 @@ body#portfolioBody {
     overflow: scroll;
     p#navigationTip {
         text-align: center;
-        color: rgba(255,255,255,.8);
+        color: rgba(255, 255, 255, 0.8);
         margin-top: 1rem;
         opacity: 0;
     }
@@ -178,7 +178,7 @@ body#portfolioBody {
                     padding-inline-start: 1.5rem;
                     list-style-type: none;
                     li {
-                        padding-top: .5rem;
+                        padding-top: 0.5rem;
                         border-bottom: dotted 2px $sunflower-yellow;
                         i {
                             float: right;
@@ -373,7 +373,9 @@ body#portfolioBody {
     background-image: url(../images/textures/dot-grid/dot-grid.png) !important;
 }
 
-.sj-book .p1 {
+.sj-book .p1#frontCover,
+.sj-book #backCover {
+    background: black;
     // background-position: 0 0;
     /* background-image: url(../pics/gradient-page-left.jpg); */
     // background: #c31432; /* fallback for old browsers */

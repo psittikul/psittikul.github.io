@@ -79,7 +79,7 @@
         <div id="canvas">
             <div id="book-zoom" style="margin:auto;">
                 <div class="sj-book">
-                    <div depth="7" class="hard p1">
+                    <div depth="7" class="hard p1" id="frontCover">
                         <h3 class="portfolio-title">PORTFOLIO</h3>
                         <div class="side"></div>
                     </div>
@@ -93,9 +93,6 @@
                                     <h5 class="category-title">PROFESSIONAL</h5>
                                     <ul class="subcontents">
                                         <a href="#page/5">
-                                            <li>From Journey To Legacy Member Portal <i>Freelance</i></li>
-                                        </a>
-                                        <a href="#page/7">
                                             <li>LINC Portal <i>LINC</i></li>
                                         </a>
                                         <a href="#page/9">
@@ -104,6 +101,14 @@
                                         <a href="#page/11">
                                             <li>LINC Website <i>LINC</i></li>
                                         </a>
+                                    </ul>
+                                </li>
+                                <li class='project-category'>
+                                    <h5 class='category-title'>
+                                        FREELANCE
+                                    </h5>
+                                    <ul class='subcontents'>
+                                        <li>From Journey To Legacy Member Portal</li>
                                     </ul>
                                 </li>
                                 <li class="project-category">
@@ -117,17 +122,8 @@
                                 <li class="project-category">
                                     <h5 class="category-title">PERSONAL</h5>
                                     <ul class="subcontents">
-                                        <a href="#page/17">
-                                            <li>VIBEREF "Mood Board"</li>
-                                        </a>
-                                        <a href="#page/19">
-                                            <li>My Job Map</li>
-                                        </a>
                                         <a href="#page/21">
                                             <li>Tarot Tracker</li>
-                                        </a>
-                                        <a href="#page/22">
-                                            <li>Tattoo Real Estate</li>
                                         </a>
                                     </ul>
                                 </li>
@@ -139,7 +135,8 @@
                         <div class="book-content">
                             <div class="row project-header">
                                 <p>User portal for LINC, a Lehigh Valley non-profit that
-                                    provides support to hundreds of individuals. Design based on mockups by Amanda
+                                    provides support to over 400 individuals from companies such as Air Products, B.
+                                    Braun, and Lutron Electronics. Design based on mockups by Amanda
                                     Grant.</p>
                                 <div class="project-img-sec">
                                     <img src="images/linc-website.PNG">
@@ -149,28 +146,28 @@
                                 <div class="col-sm-6">
                                     <h5>SCOPE</h5>
                                     <ul class="scope-list">
+                                        <li>WordPress content management and custom data types</li>
                                         <li>User management, authentication and authorization</li>
-                                        <li>Contact forms</li>
-                                        <li>UX design</li>
-                                        <li>Content writing</li>
-                                        <li>Custom data types and architecture</li>
-                                        <li>Content management</li>
-                                        <li>Server setup and maintenance</li>
+                                        <li>Contact forms, notifications and spam prevention</li>
+                                        <li>UX design and testing</li>
+                                        <li>Content creation</li>
                                         <li>Database design and administration</li>
-                                        <li>New user training</li>
-                                        <li>Site traffic and usage analytics</li>
+                                        <li>Server setup and maintenance</li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>TECHNOLOGIES USED</h5>
                                     <ul class="tech-list">
                                         <li>WordPress</li>
-                                        <li>Azure Web Services</li>
+                                        <li>Microsoft Azure Web Services</li>
                                         <li>Google Analytics</li>
                                         <li>Git CLI</li>
                                         <li>PHP</li>
                                         <li>JavaScript</li>
-                                        <li>SQL</li>
+                                        <li>Microsoft SQL Server</li>
+                                        <li>HTML</li>
+                                        <li>CSS/SCSS</li>
+                                        <li>Bootstrap</li>
                                     </ul>
                                 </div>
                             </div>
@@ -182,23 +179,23 @@
                             <h5 class="project-subheading">AUDIENCE</h5>
                             <ul>
                                 <li>
-                                    Newly relocated hires transitioning to the Lehigh Valley
+                                    Newly relocated hires in need of assistance relocating and acclimating to the Lehigh Valley, referred by partner companies
                                 </li>
                                 <li>
-                                    HR representatives and recruiters from local member companies
+                                    HR representatives and recruiters from partner companies such as Air Products, B. Braun, Crayola, and Lutron Electronics.
                                 </li>
                             </ul>
                             <h5 class="project-subheading">BACKGROUND</h5>
                             <p>
-                                The LINC Portal has two sides: an employer side for member companies, and a client
-                                side for newly relocated hires.</p>
+                                The LINC Portal has two sides: an "employer side" for partner companies, and a "client
+                                side" for newly relocated hires.</p>
                             <p>
-                                On the employer side, contacts from member companies can refer new hires for LINC
+                                On the employer side, hiring representatives from partner companies can refer new hires for LINC
                                 services, using the online referral form. All referral form submissions are stored in
                                 the WordPress database, allowing for easy, ongoing reporting on metrics such as cost and
                                 services utilized.</p>
                             <p>
-                                On the client side, new hires referred by member companies can access the resources and
+                                On the client side, new hires referred by partner companies can access the resources and
                                 information necessary for a smooth transition to their new home.
                             </p>
                         </div>
@@ -207,8 +204,8 @@
                         <h4 class="project-title">LINC Resource Web App & Database</h4>
                         <div class="book-content">
                             <div class="row project-header">
-                                <p>This is a web app that functions as both a database for community resources as well
-                                    as a tool to curate and format resources specific to each client's needs.</p>
+                                <p>Web app that functions as both a database for community resources as well
+                                    as a tool to curate, format, and deliver resources tailored to each client's needs.</p>
                                 <div class="project-img-sec">
                                     <img src="images/linc-website.PNG">
                                 </div>
@@ -217,26 +214,28 @@
                                 <div class="col-sm-6">
                                     <h5>SCOPE</h5>
                                     <ul class="scope-list">
-                                        <li>UX design</li>
+                                        <li>UX design and testing</li>
                                         <li>Server setup and maintenance</li>
                                         <li>Database design and administration</li>
-                                        <li>User training</li>
+                                        <li>Ability to export pages as PDF as well as print</li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>TECHNOLOGIES USED</h5>
                                     <ul class="tech-list">
-                                        <li>Azure Web Services</li>
+                                        <li>Microsoft Azure Web Services</li>
                                         <li>Git CLI</li>
                                         <li>PHP</li>
                                         <li>JavaScript</li>
-                                        <li>SQL</li>
+                                        <li>Microsoft SQL Server</li>
+                                        <li>HTML</li>
+                                        <li>CSS/SCSS</li>
                                     </ul>
                                 </div>
                             </div>
                             <h5 class="project-subheading">AUDIENCE</h5>
                             <ul>
-                                <li>LINC client coordinators and volunteers</li>
+                                <li>LINC staff and volunteers</li>
                             </ul>
                         </div>
                     </div>
@@ -272,7 +271,7 @@
                     <div depth="5" class="hard odd back-side p9">
                         Back inside cover?
                     </div>
-                    <div depth="5" class="hard p10">
+                    <div depth="5" id="backCover" class="hard p10">
                         <h3>Back cover</h3>
                         <div class="side"></div>
                     </div>
@@ -285,7 +284,7 @@
     </div>
     <div id="footer">
         <hr id="pageUnderline">
-        <p>&copy; Patricia Sittikul 2020</p>
+        <p>&copy; Patricia Sittikul 2021</p>
     </div>
     <script type="text/javascript">
 
