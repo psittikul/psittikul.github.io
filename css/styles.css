@@ -431,7 +431,9 @@ body#portfolioBody p#navigationTip {
   background-image: url(../images/textures/dot-grid/dot-grid.png) !important;
 }
 
-.sj-book .p1 {
+.sj-book .p1#frontCover,
+.sj-book #backCover {
+  background: black;
   /* background-image: url(../pics/gradient-page-left.jpg); */
   /* background-image: url(../../../../images/linc-website-full.jpg) !important; */
 }
