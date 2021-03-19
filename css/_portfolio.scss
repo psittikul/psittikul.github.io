@@ -200,11 +200,18 @@ body#portfolioBody {
             }
         }
     }
+
+    .image-desc {
+        text-align: center;
+        line-height: normal;
+    }
     .project-img-sec {
         margin-bottom: 2rem;
+        text-align: center;
         img {
             width: 80%;
             margin: auto;
+            margin-bottom: 1rem;
             display: flex;
             box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.2);
         }

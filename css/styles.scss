@@ -312,6 +312,16 @@ span.emphasis {
   }
 }
 
+.yellow-btn {
+  border: none;
+  background: $sunflower-yellow;
+  transition: 0.25s;
+  &:hover {
+    background: #222;
+    color: $sunflower-yellow;
+  }
+}
+
 #portfolioBtn {
   height: 10rem;
   width: 10rem;
