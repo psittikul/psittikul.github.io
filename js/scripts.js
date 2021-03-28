@@ -17,11 +17,9 @@ $(function () {
             return;
         }
         if ($("#latestWorkCarousel").isInViewport()) {
-            console.log("At least half of carousel is in viewport?!");
             $("#latestWorkCarousel").removeClass("out-of-focus");
         }
         else {
-            console.log("Carousel is mostly out of viewport?");
             $("#latestWorkCarousel").addClass("out-of-focus");
         }
     });
