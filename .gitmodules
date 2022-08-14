@@ -1,0 +1,3 @@
+[submodule "ethics/libgif-js"] 
+  path = ethics/libgif-js 
+  url = git://https://github.com/buzzfeed/libgif-js
