@@ -41,6 +41,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "countup.js": "^2.0.4"
+    "countup.js": "^2.0.4",
+    "libgif": "0.0.3"
   }
 }
